@@ -11,11 +11,11 @@
     <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип компании MISHKA"></a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href=" catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__list search-form">
           <a href="#" class="search-form__item">Поиск по сайту</a>
@@ -32,16 +32,16 @@
     <h1 class="page-main__title">Вязание на заказ</h1>
     <p class="page-main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
       уточнить детали.</p>
-    <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset class="radio-list">
-        <legend class="radio-list__heading">тип</legend>
+    <form method="get" action="https://echo.htmlacademy.ru" class="order-form">
+      <fieldset class="radio-list order-form__item">
+        <legend class="radio-list__heading order-form__heading">тип</legend>
         <label for="accessory" class="radio-list__name">Аксессуар для интерьера</label>
         <input type="radio" class="radio-list__item radio" value="Аксессуар для интерьера" id="accessory" name="radio-value" checked>
         <label for="toy" class="radio-list__name">Детская игрушка</label>
         <input type="radio" class="radio-list__item radio" value="Детская игрушка" id="toy" name="radio-value">
       </fieldset>
-      <fieldset class="checkbox-list">
-        <legend>цвет</legend>
+      <fieldset class="checkbox-list order-form__item">
+        <legend class="order-form__heading">цвет</legend>
         <label for="white" class="checkbox-list__name">Белый</label>
         <input type="checkbox" class="checkbox-list__item checkbox" id="white" value="Белый" name="white" checked>
         <label for="gray" class="checkbox-list__name">Серый</label>
@@ -55,8 +55,8 @@
         <label for="orange" class="checkbox-list__name">Оранжевый</label>
         <input type="checkbox" class="checkbox-list__item checkbox" id="orange" value="Оранжевый" name="orange">
       </fieldset>
-      <fieldset class="contacts-list">
-        <legend class="contacts-list__heading">фио</legend>
+      <fieldset class="contacts-list order-form__item">
+        <legend class="contacts-list__heading order-form__heading">фио</legend>
         <label for="name" class="contacts-list__title">Имя:</label>
         <input type="text" class="contacts-list__item contact-info" id="name" placeholder="Введите ваше имя*" required>
         <label for="surname" class="contacts-list__title">Фамилия:</label>
@@ -64,23 +64,23 @@
         <label for="patronymic" class="contacts-list__title">Отчество:</label>
         <input type="text" class="contacts-list__item contact-info" id="patronymic" placeholder="Отчество, если желаете">
       </fieldset>
-      <fieldset class="tel-list">
-        <label for="tel" class="tel-list__title">тел</label>
+      <fieldset class="tel-list order-form__item">
+        <label for="tel" class="tel-list__title order-form__heading">тел</label>
         <input type="tel" name="tel" class="tel-list__item contact-info" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
           placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="tel">
         <img src="img/phone.svg" alt="иконка телефона" width="25" height="24" class="tel-list__icon">
       </fieldset>
-      <fieldset class="email-list">
-        <label for="email" class="email-form__title">e-mail</label>
-        <input type="email contact-info" class="email-list__item" placeholder="Ваш Email*" required id="email">
+      <fieldset class="email-list order-form__item">
+        <label for="email" class="email-list__title">e-mail</label>
+        <input type="email" class="email-list__item contact-info" placeholder="Ваш Email*" required id="email">
         <img src="img/mail.svg" alt="иконка электронной почты" width="32" height="21" class="email-list__icon">
       </fieldset>
-      <fieldset class="extra-form">
+      <fieldset class="extra-form order-form__item">
         <label for="extra" class="extra-form__title">доп</label>
         <input type="text" class="extra-form__item" id="extra" placeholder="Опишите все ваши пожелания к заказу">
       </fieldset>
       <p>*Поля обязательны для заполнения</p>
-      <button type="submit" class="form-sender" aria-label="отправить форму заказа">отправить заказ</button>
+      <button type="submit" class="form-sender button">отправить заказ</button>
     </form>
 
     <footer class="page-footer">
