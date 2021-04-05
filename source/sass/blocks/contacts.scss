@@ -1,0 +1,25 @@
+.contacts {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-gray;
+  margin-bottom: 39px;
+}
+
+.contacts__header {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.contacts__contact-us {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+}

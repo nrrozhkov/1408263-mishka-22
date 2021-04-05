@@ -1,0 +1,37 @@
+.categories {
+  font-family: "Open sans", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.categories__header {
+  color: $basic-black;
+  background-color: $wave-gray;
+  background-image: url("/img/background-toys-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.categories__title {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: $basic-black;
+}
+
+.categories__list {
+  list-style: none;
+}
+
+.categories__list .categories__list__item:nth-child(1) {
+  background-color: $tiffany;
+}
+
+.categories__list .categories__list__item:nth-child(2) {
+  background-color: $dark-tiffany;
+}
+
+.categories__list__item__link {
+  color: $basic-white;
+}

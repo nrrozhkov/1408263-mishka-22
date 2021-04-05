@@ -1,0 +1,48 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open-sans", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $basic-black;
+  background-color: $basic-white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
