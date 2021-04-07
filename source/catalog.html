@@ -9,20 +9,20 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35"
+    <a class="page-header__logo"><img src="img/mishka-logo-mobile.svg" width="86" height="35"
         alt="Логотип компании MISHKA"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href=" catalog.html" class="main-nav__item__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__item__link">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__list search-form">
-          <a href="#" class="search-form__item">Поиск по сайту</a>
+          <a href="#" class="main-nav__item__link">Поиск по сайту</a>
         </div>
         <div class="main-nav__list user-list">
-          <a class="user-list__basket" href="#">
+          <a class="main-nav__item__link" href="#">
             Корзина
           </a>
         </div>
@@ -31,35 +31,47 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог товаров</h1>
+    <div class="page-theme">
+      <h1 class="page-main__title">Каталог товаров</h1>
+    </div>
     <section class="catalog">
-    <h2 class="visually-hidden">Список товаров</h2>
+      <h2 class="visually-hidden">Список товаров</h2>
       <div class="wrapper">
         <div class="catalog__list">
           <div class="product">
-            <a href="#" class="product__link"><img src="img/photo-1.jpg" alt="Фотография зайчика попрыгайчика" width="260" height="195"
-              class="product-img"></a>
-              <a href="#" class="product__link"><p class="product__name">Зайчик-попрыгайчик</p></a>
+            <a href="#" class="product__link"><img src="img/photo-1.jpg" alt="Фотография зайчика попрыгайчика"
+                width="260" height="195" class="product-img"></a>
+            <a href="#" class="product__link">
+              <p class="product__name">Зайчик-попрыгайчик</p>
+            </a>
             <p class="product__desc">Рост 30 см, вес 200 г</p>
             <p class="product__price">1 200 руб.</p>
-            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket" alt="Посмотреть корзину" width="20" height="19">
-          </a>
+            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                alt="Посмотреть корзину" width="20" height="19">
+            </a>
           </div>
           <div class="product">
-            <a href="#" class="product__link"><img src="img/photo-2.jpg" alt="Фотография корзинки для белья" width="260" height="195" class="product-img"></a>
-            <a href="#" class="product__link"><p class="product__name">Корзинка для белья</p></a>
+            <a href="#" class="product__link"><img src="img/photo-2.jpg" alt="Фотография корзинки для белья" width="260"
+                height="195" class="product-img"></a>
+            <a href="#" class="product__link">
+              <p class="product__name">Корзинка для белья</p>
+            </a>
             <p class="product__desc">Диаметр 15 см, высота 10 см</p>
             <p class="product__price">690 руб.</p>
-            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket" alt="Посмотреть корзину" width="20" height="19">
-          </a>
+            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                alt="Посмотреть корзину" width="20" height="19">
+            </a>
           </div>
           <div class="product">
-            <a href="#" class="product__link"><img src="img/photo-3.jpg" alt="Фотография большой корзинки для игрушек" width="260" height="195"
-              class="product-img"></a>
-              <a href="#" class="product__link"><p class="product__name">Большая корзинка для игрушек</p></a>
+            <a href="#" class="product__link"><img src="img/photo-3.jpg" alt="Фотография большой корзинки для игрушек"
+                width="260" height="195" class="product-img"></a>
+            <a href="#" class="product__link">
+              <p class="product__name">Большая корзинка для игрушек</p>
+            </a>
             <p class="product__desc">Диаметр 30 см, высота 30 см</p>
             <p class="product__price">1 500 руб.</p>
-            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket" alt="Посмотреть корзину" width="20" height="19"></a>
+            <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                alt="Посмотреть корзину" width="20" height="19"></a>
           </div>
         </div>
       </div>

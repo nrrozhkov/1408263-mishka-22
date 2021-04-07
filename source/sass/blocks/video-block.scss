@@ -1,0 +1,20 @@
+.video-block {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.video-block__title {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.video-block__desc {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: $font-gray;
+}
