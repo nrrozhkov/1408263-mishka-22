@@ -1,0 +1,17 @@
+.main-nav,
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $basic-black;
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+}

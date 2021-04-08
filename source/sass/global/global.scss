@@ -16,33 +16,6 @@ img {
   overflow: hidden;
 }
 
-.page {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open-sans", sans-serif;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $basic-black;
-  background-color: $basic-white;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-}
-
 a {
   text-decoration: none;
-}
-
-.button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-transform: uppercase;
 }

@@ -2,6 +2,14 @@
   margin-top: 30px;
 }
 
+.product:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .product__link {
   text-decoration: none;
 }
@@ -14,9 +22,15 @@
   color: $basic-black;
 }
 
+.product__name:hover {
+  opacity: 0.6;
+}
+
+.product__name:focus {
+  opacity: 0.3;
+}
+
 .product__desc {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: $font-gray;
@@ -27,5 +41,4 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
-  color: $basic-black;
 }

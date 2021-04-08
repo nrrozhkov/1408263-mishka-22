@@ -1,6 +1,6 @@
 // Global
 
-// @import "global/fonts.scss";
+@import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/global.scss";
 
@@ -10,7 +10,7 @@
 @import "blocks/catalog.scss";
 @import "blocks/categories.scss";
 @import "blocks/checkbox-list.scss";
-@import "blocks/contacts-list.scss";
+@import "blocks/contact-us.scss";
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
 @import "blocks/email-list.scss";
@@ -30,3 +30,8 @@
 @import "blocks/user-list.scss";
 @import "blocks/video-block.scss";
 @import "blocks/video-wrapper.scss";
+@import "blocks/button.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-theme.scss";
+@import "blocks/contact-info.scss";
+@import "blocks/contacts-list.scss";

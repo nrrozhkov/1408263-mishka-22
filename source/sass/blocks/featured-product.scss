@@ -1,6 +1,4 @@
 .featured-product {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
   font-size: 17px;
   line-height: 20px;
 }
@@ -10,7 +8,6 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: $basic-black;
 }
 
 .featured-product__subtitle {
@@ -31,8 +28,6 @@
 }
 
 .featured-product__list {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: $font-gray;
@@ -44,13 +39,4 @@
   font-size: 17px;
   line-height: 24px;
   color: $font-gray;
-}
-
-.featured-product__button {
-  font-family: "Open sans", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: $font-gray;
-  text-transform: uppercase;
 }

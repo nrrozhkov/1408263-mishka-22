@@ -1,7 +1,6 @@
-
 .contacts-list {
   border: none;
-  margin-bottom: 34.5px;
+  margin-bottom: 35px;
 }
 
 .contacts-list__title {
@@ -9,14 +8,4 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  color: $basic-black;
-}
-
-.contact-info::placeholder {
-  font-family: "Open sans", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 18px;
-  color: $basic-black;
-  opacity: 0.3;
 }
