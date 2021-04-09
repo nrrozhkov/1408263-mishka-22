@@ -1,16 +1,5 @@
 .contact-info::placeholder {
-  border-bottom: 1px solid $basic-black;
   font-size: 17px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid $tiffany;
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid $tiffany;
-  }
 }
