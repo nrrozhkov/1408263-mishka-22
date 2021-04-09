@@ -1,5 +1,4 @@
 .button {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -7,15 +6,15 @@
   border: 2px solid $font-gray;
   color: $font-gray;
   background-color: $basic-white;
-}
 
-.button:hover {
-  color: $basic-white;
-  background-color: $font-gray;
-}
+  &:hover {
+    color: $basic-white;
+    background-color: $font-gray;
+  }
 
-.button:active {
-  color: $basic-white;
-  background-color: $font-gray;
-  opacity: 0.3;
+  &:active {
+    color: $basic-white;
+    background-color: $font-gray;
+    opacity: 0.3;
+  }
 }

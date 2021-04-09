@@ -1,13 +1,13 @@
 .product {
   margin-top: 30px;
-}
 
-.product:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-}
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
 
-.product:active {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__link {
@@ -15,19 +15,18 @@
 }
 
 .product__name {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $basic-black;
-}
 
-.product__name:hover {
-  opacity: 0.6;
-}
+  &:hover {
+    opacity: 0.6;
+  }
 
-.product__name:focus {
-  opacity: 0.3;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__desc {
@@ -37,7 +36,6 @@
 }
 
 .product__price {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;

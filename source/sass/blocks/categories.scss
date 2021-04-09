@@ -1,5 +1,4 @@
 .categories {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -14,7 +13,6 @@
 }
 
 .categories__title {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -25,30 +23,30 @@
   list-style: none;
 }
 
-.categories__list__item:nth-child(1) {
+.categories__item:nth-child(1) {
   background-color: $tiffany;
+
+  &:hover {
+    background-color: $tiffany-hover;
+  }
+
+  &:active {
+    background-color: $tiffany-hover;
+  }
 }
 
-.categories__list__item:nth-child(1):hover {
-  background-color: $tiffany-hover;
-}
-
-.categories__list__item:nth-child(1):active {
-  background-color: $tiffany-hover;
-}
-
-.categories__list__item:nth-child(2) {
+.categories__item:nth-child(2) {
   background-color: $dark-tiffany;
+
+  &:hover {
+    background-color: $dark-tiffany-hover;
+  }
+
+  &:active {
+    background-color: $dark-tiffany-hover;
+  }
 }
 
-.categories__list__item:nth-child(2):hover {
-  background-color: $dark-tiffany-hover;
-}
-
-.categories__list__item:nth-child(2):active {
-  background-color: $dark-tiffany-hover;
-}
-
-.categories__list__link {
+.categories__link {
   color: $basic-white;
 }

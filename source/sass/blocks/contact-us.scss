@@ -4,7 +4,6 @@
 }
 
 .contact-us__header {
-  font-family: "Open sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -15,14 +14,14 @@
   line-height: 30px;
   color: $font-gray;
   border-bottom: 1px solid $tiffany;
-}
 
-.contact-us__email:hover {
-  color: $tiffany;
-  border-bottom: 1px solid $tiffany;
-}
+  &:hover {
+    color: $tiffany;
+    border-bottom: 1px solid $tiffany;
+  }
 
-.contact-us__email:active {
-  color: $tiffany;
-  border: none;
+  &:active {
+    color: $tiffany;
+    border: none;
+  }
 }
