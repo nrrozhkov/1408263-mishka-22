@@ -1,0 +1,23 @@
+.main-nav,
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

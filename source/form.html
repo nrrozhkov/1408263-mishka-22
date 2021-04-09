@@ -4,24 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>Форма заказа интернет-магазина вязаных изделий ручной работы Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" width="86" height="35"
+    <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" class="page-header__image" width="86" height="35"
         alt="Логотип компании MISHKA"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href=" catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__list search-form">
-          <a href="#" class="search-form__item">Поиск по сайту</a>
+          <a href="#" class="main-nav__link">Поиск по сайту</a>
         </div>
         <div class="main-nav__list user-list">
-          <a class="user-list__basket" href="#">
+          <a class="main-nav__link" href="#">
             Корзина
           </a>
         </div>
@@ -29,14 +30,18 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Вязание на заказ</h1>
-    <p class="page-main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+    <div class="page-theme">
+      <h1 class="page-theme__title">Вязание на заказ</h1>
+    </div>
+    <p class="page-main__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+      свяжемся с вами, чтобы
       уточнить детали.</p>
     <form method="get" action="https://echo.htmlacademy.ru" class="order-form">
       <fieldset class="radio-list order-form__item">
         <legend class="radio-list__heading order-form__heading">тип</legend>
         <label for="accessory" class="radio-list__name">Аксессуар для интерьера</label>
-        <input type="radio" class="radio-list__item radio" value="Аксессуар для интерьера" id="accessory" name="radio-value" checked>
+        <input type="radio" class="radio-list__item radio" value="Аксессуар для интерьера" id="accessory"
+          name="radio-value" checked>
         <label for="toy" class="radio-list__name">Детская игрушка</label>
         <input type="radio" class="radio-list__item radio" value="Детская игрушка" id="toy" name="radio-value">
       </fieldset>
@@ -46,7 +51,7 @@
         <input type="checkbox" class="checkbox-list__item checkbox" id="white" value="Белый" name="white" checked>
         <label for="gray" class="checkbox-list__name">Серый</label>
         <input type="checkbox" class="checkbox-list__item checkbox" id="gray" value="Серый" name="gray" checked>
-        <label for="tiffany" class="checkbox-list__name">«Тиффани»</label>
+        <label for="tiffany" class="checkbox-list__name">"Тиффани"</label>
         <input type="checkbox" class="checkbox-list__item checkbox" id="tiffany" value="«Тиффани»" name="tiffany">
         <label for="black" class="checkbox-list__name">Черный</label>
         <input type="checkbox" class="checkbox-list__item checkbox" id="black" value="Черный" name="black">
@@ -60,49 +65,51 @@
         <label for="name" class="contacts-list__title">Имя:</label>
         <input type="text" class="contacts-list__item contact-info" id="name" placeholder="Введите ваше имя*" required>
         <label for="surname" class="contacts-list__title">Фамилия:</label>
-        <input type="text" class="contacts-list__item contact-info" id="surname" placeholder="Укажите фамилию*" required>
+        <input type="text" class="contacts-list__item contact-info" id="surname" placeholder="Укажите фамилию*"
+          required>
         <label for="patronymic" class="contacts-list__title">Отчество:</label>
-        <input type="text" class="contacts-list__item contact-info" id="patronymic" placeholder="Отчество, если желаете">
+        <input type="text" class="contacts-list__item contact-info" id="patronymic"
+          placeholder="Отчество, если желаете">
       </fieldset>
       <fieldset class="tel-list order-form__item">
         <label for="tel" class="tel-list__title order-form__heading">тел</label>
-        <input type="tel" name="tel" class="tel-list__item contact-info" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
-          placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="tel">
+        <input type="tel" name="tel" class="tel-list__item contact-info"
+          pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required id="tel">
         <img src="img/phone.svg" alt="иконка телефона" width="25" height="24" class="tel-list__icon">
       </fieldset>
       <fieldset class="email-list order-form__item">
-        <label for="email" class="email-list__title">e-mail</label>
+        <label for="email" class="email-list__title order-form__heading">e-mail</label>
         <input type="email" class="email-list__item contact-info" placeholder="Ваш Email*" required id="email">
         <img src="img/mail.svg" alt="иконка электронной почты" width="32" height="21" class="email-list__icon">
       </fieldset>
       <fieldset class="extra-form order-form__item">
-        <label for="extra" class="extra-form__title">доп</label>
+        <label for="extra" class="extra-form__title order-form__heading">доп</label>
         <input type="text" class="extra-form__item" id="extra" placeholder="Опишите все ваши пожелания к заказу">
       </fieldset>
-      <p>*Поля обязательны для заполнения</p>
+      <p class="order-form__desc">*Поля обязательны для заполнения</p>
       <button type="submit" class="form-sender button">отправить заказ</button>
     </form>
 
     <footer class="page-footer">
-    <div class="wrapper">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-          </li>
-        </ul>
+      <div class="wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
+        </div>
       </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34">HTML Academy</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
   </main>
 </body>

@@ -1,0 +1,24 @@
+.contacts-list {
+  border: none;
+  margin-bottom: 35px;
+}
+
+.contacts-list__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.contacts-list__item {
+  border-bottom: 1px solid $basic-black;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $tiffany;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $tiffany;
+  }
+}

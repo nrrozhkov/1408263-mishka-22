@@ -1,0 +1,20 @@
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid $font-gray;
+  color: $font-gray;
+  background-color: $basic-white;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $font-gray;
+  }
+
+  &:active {
+    color: $basic-white;
+    background-color: $font-gray;
+    opacity: 0.3;
+  }
+}

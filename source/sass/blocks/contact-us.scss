@@ -1,0 +1,27 @@
+.contact-us-list {
+  border: none;
+  margin-bottom: 35px;
+}
+
+.contact-us__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact-us__email {
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-gray;
+  border-bottom: 1px solid $tiffany;
+
+  &:hover {
+    color: $tiffany;
+    border-bottom: 1px solid $tiffany;
+  }
+
+  &:active {
+    color: $tiffany;
+    border: none;
+  }
+}

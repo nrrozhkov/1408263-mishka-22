@@ -4,24 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>Интернет-магазин вязаных изделий ручной работы Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo"><img src="img/mishka-logo-mobile.svg" width="86" height="35"
+    <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" class="page-header__image" width="86" height="35"
         alt="Логотип компании MISHKA"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href=" catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
         </ul>
         <div class="main-nav__list search-form">
-          <a href="#" class="search-form__item">Поиск по сайту</a>
+          <a href="#" class="main-nav__link">Поиск по сайту</a>
         </div>
         <div class="main-nav__list user-list">
-          <a class="user-list__basket" href="#">
+          <a class="main-nav__link" href="#">
             Корзина
           </a>
         </div>
@@ -35,8 +36,8 @@
           <h1 class="categories__title">Милые штучки ручной работы для дома</h1>
         </header>
         <ul class="categories__list">
-          <li class="categories__list__item"><a href="#">Предметы интерьера</a></li>
-          <li class="categories__list__item"><a href="#">Детские игрушки</a></li>
+          <li class="categories__item"><a href="#" class="categories__link">Предметы интерьера</a></li>
+          <li class="categories__item"><a href="#" class="categories__link">Детские игрушки</a></li>
         </ul>
       </div>
     </section>
@@ -72,7 +73,7 @@
         <img class="featured-product__image" src="img/triple-set-mobile1.jpg" alt="Вязаные корзинки" width="260"
           height="315">
         <p class="featured-product__price">Цена: 990 руб.</p>
-        <a class="featured-product__button" href="#">заказать</a>
+        <a class="featured-product__button button" href="#">заказать</a>
       </div>
     </section>
     <section class="about-us">
@@ -121,23 +122,23 @@
           <button class="slider__toggle button" type="button">назад</button>
           <button class="slider__toggle button" type="button">вперед</button>
         </p>
-        <a class="reviews__contact" href="#">написать</a>
+        <a class="reviews__contact button" href="#">написать</a>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contact-us">
       <div class="wrapper">
-        <div class="contacts__list">
-          <h3 class="contacts__header">Контакты</h3>
-          <p class="contacts__headline">email:</p>
-          <a class="contacts__info" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          <p class="contacts__headline">адрес:</p>
-          <p class="contacts__info">г. Санкт-Петербург<br>ул. Большая Конюшеннаяд. 19/8, офис 101</p>
-          <div class="contacts__map">
+        <div class=" contact-us__list">
+          <h3 class="contact-us__header">Контакты</h3>
+          <p class="contact-us__headline">email:</p>
+          <a class="contact-us__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          <p class="contact-us__headline">адрес:</p>
+          <p class="contact-us__info">г. Санкт-Петербург<br>ул. Большая Конюшеннаяд. 19/8, офис 101</p>
+          <div class="contact-us__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.320858716186894!3d59.93871648187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616917432182!5m2!1sru!2sru" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               <img src="img/map-mobile.jpg" alt="Где мы находимся" width="320" height="454">
             </div>
-          <a class="contacts__contact-us" href="#">напишите нам</a>
+          <a class="contact-us__contact-us button" href="#">напишите нам</a>
         </div>
       </div>
     </section>
@@ -147,19 +148,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
       </div>
     </div>
   </footer>

@@ -1,0 +1,40 @@
+.featured-product {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.featured-product__heading {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.featured-product__subtitle {
+  font-family: "Open sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $tiffany;
+  text-transform: uppercase;
+}
+
+.featured-product__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $font-gray;
+}
+
+.featured-product__list {
+  font-size: 15px;
+  line-height: 20px;
+  color: $font-gray;
+}
+
+.featured-product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $font-gray;
+}
