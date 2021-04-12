@@ -12,3 +12,40 @@
   color: $tiffany;
   text-transform: uppercase;
 }
+
+.form-sender {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 2px solid $font-gray;
+  background-color: $basic-white;
+  color: $font-gray;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $font-gray;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg, $font-gray, $font-gray);
+  }
+}
+
+.contact-info,
+.extra-form__item {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    color: $basic-black;
+  }
+
+  &:active {
+    color: $basic-black;
+  }
+}
