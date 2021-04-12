@@ -1,4 +1,5 @@
 .button {
+  font-family: "Open-sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -13,8 +14,12 @@
   }
 
   &:active {
-    color: $basic-white;
-    background-color: $font-gray;
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg, $font-gray, $font-gray);
   }
+}
+
+.button--form {
+  font-size: 17px;
+  line-height: 16px;
 }
