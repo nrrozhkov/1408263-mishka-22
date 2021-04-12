@@ -5,8 +5,8 @@
 
 .extra-form__item {
   border: 2px solid $font-gray;
-}
 
-.extra-form__item:hover {
-  border: 2px solid $tiffany;
+  &:hover {
+    border: 2px solid $tiffany;
+  }
 }
