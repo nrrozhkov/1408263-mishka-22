@@ -14,17 +14,12 @@
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $btn-white;
     background: linear-gradient(0deg, $font-gray, $font-gray);
   }
 }
 
 .button--form {
   font-size: 17px;
-  line-height: 16px;
-}
-
-.button--catalog {
-  font-size: 18px;
   line-height: 16px;
 }
