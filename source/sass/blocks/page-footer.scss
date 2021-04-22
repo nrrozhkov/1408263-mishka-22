@@ -2,4 +2,22 @@
   font-size: 19px;
   line-height: 19px;
   background-color: $wave-gray;
+  min-height: 160px;
+  display: grid;
+  grid-template-rows: 80px 80px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 143px;
+    display: flex;
+  }
+}
+
+.page-footer__copyright {
+  margin-left: 69px;
+  grid-row: 2/3;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 4/5;
+  }
 }

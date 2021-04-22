@@ -4,12 +4,23 @@
   line-height: 24px;
   color: $basic-white;
   margin-bottom: 31px;
+  min-height: 489px;
 }
 
 .categories__header {
   background-color: $wave-gray;
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-repeat: no-repeat;
+  }
 }
 
 .categories__title {
@@ -17,14 +28,35 @@
   font-size: 27px;
   line-height: 30px;
   color: $basic-black;
+  padding-top: 73px;
+  text-align: center;
+  padding-bottom: 120px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 151px 71px 374px 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 175px 355px 205px;
+  }
 }
 
 .categories__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .categories__item:nth-child(1) {
   background-color: $tiffany;
+  min-height: 103px;
+  margin: 0 -30px;
 
   &:hover {
     background-color: $tiffany-hover;
@@ -32,11 +64,24 @@
 
   &:active {
     background-color: $tiffany-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+    min-width: 334px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 525px;
+    margin: 0;
   }
 }
 
 .categories__item:nth-child(2) {
   background-color: $dark-tiffany;
+  min-height: 103px;
+  margin: 0 -30px;
 
   &:hover {
     background-color: $dark-tiffany-hover;
@@ -44,6 +89,17 @@
 
   &:active {
     background-color: $dark-tiffany-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+    min-width: 334px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 525px;
+    margin: 0;
   }
 }
 

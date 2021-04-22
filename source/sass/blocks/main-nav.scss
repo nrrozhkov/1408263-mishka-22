@@ -1,12 +1,10 @@
-.main-nav,
-.main-nav__list {
-  list-style: none;
-}
-
 .main-nav__list {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__link {
@@ -19,5 +17,14 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
   }
 }

@@ -9,8 +9,38 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 43px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 39px;
+    padding-left: 175px;
+    padding-right: 200px;
+  }
 }
 
 .about-us__list {
   list-style: none;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 331px 331px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 331px 331px;
+    padding-left: 175px;
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__item {
+    margin-bottom: 111px;
+  }
 }

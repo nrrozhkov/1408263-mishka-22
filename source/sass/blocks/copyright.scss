@@ -2,4 +2,27 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  margin-top: 29px;
+  margin-right: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
+    margin-top: 51px;
+    margin-left: 423px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 1023px;
+  }
+}
+
+.copyright__link {
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+    margin-top: 51px;
+    width: 27px;
+    height: 34px;
+  }
 }

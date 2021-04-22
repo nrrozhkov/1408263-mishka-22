@@ -1,19 +1,68 @@
-.contact-us-list {
+.contact-us__list {
   border: none;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
   margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 261px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+    margin-bottom: 105px;
+    min-width: 988px;
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px 175px 175px;
+  }
 }
 
 .contact-us__header {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 244px;
+    margin: 0;
+    margin-right: 400px;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+  }
+}
+
+.contact-us__headline {
+  max-width: 76px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 81px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+  }
 }
 
 .contact-us__email {
-  font-size: 14px;
   line-height: 30px;
   color: $font-gray;
   border-bottom: 1px solid $tiffany;
+  max-width: 76px;
 
   &:hover {
     color: $tiffany;
@@ -23,5 +72,69 @@
   &:active {
     color: $tiffany;
     border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 187px;
+    max-width: 81px;
+    height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+  }
+}
+
+.contact-us__info {
+  @media (min-width: $tablet-width) {
+    max-width: 257px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/4;
+  }
+}
+
+.contact-us__map {
+  background-image: url("../img/map-mobile.jpg");
+  margin: 0 -30px;
+  margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+    width: 100%;
+    max-height: 457px;
+    margin: 0 -50px;
+    margin-top: 49px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column: 4/7;
+    grid-row: 1/7;
+  }
+}
+
+.contact-us__map iframe {
+  width: 100%;
+}
+
+.contact-us__button {
+  padding: 16px 38px 16px 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 28px 16px 26px;
+    margin-left: 219px;
+  }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 230px;
+    height: 52px;
+    margin: 0;
+    padding: 16px 27px;
+    grid-column: 2/3;
   }
 }
