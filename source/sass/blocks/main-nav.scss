@@ -9,14 +9,14 @@
 
 .main-nav__logo {
   @media (min-width: $tablet-width) {
-    padding-right: 209px;
     order: 1;
+    min-width: 209px;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 149px;
     margin-right: 163px;
     padding: 0;
-    min-width: 149px;
     order: 2;
   }
 }
