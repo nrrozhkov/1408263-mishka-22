@@ -8,6 +8,10 @@
   border: 2px solid $font-gray;
   color: $font-gray;
   background-color: $basic-white;
+  padding: 10px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     color: $basic-white;

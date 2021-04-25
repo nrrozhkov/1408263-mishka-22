@@ -1,15 +1,19 @@
 .slider {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    width: 668px;
-    margin: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    padding-left: 175px;
   }
+}
+
+.slider__item:nth-child(2),
+.slider__item:last-child {
+  display: none;
 }

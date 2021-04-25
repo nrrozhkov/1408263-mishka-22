@@ -7,121 +7,13 @@
   height: 79px;
 
   @media (min-width: $tablet-width) {
+    order: 1;
     height: 89px;
   }
 
   @media (min-width: $desktop-width) {
     height: 89px;
   }
-}
-
-@media (min-width: $mobile-width-only) {
-  .marketing-list {
-    display: none;
-  }
-
-  .delivery-list {
-    display: none;
-  }
-
-  .user-list {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .main-logo {
-    min-width: 322px;
-    order: 1;
-  }
-
-  .user-list {
-    display: flex;
-    flex-direction: row;
-    order: 2;
-  }
-
-  .user-list__search {
-    max-width: 82px;
-  }
-
-  .user-list__basket {
-    text-align: right;
-    min-width: 264px;
-  }
-
-
-  .site-list {
-    display: flex;
-    flex-direction: row;
-    min-width: 305px;
-    order: 3;
-  }
-
-  .delivery-list {
-    display: block;
-    text-align: right;
-    order: 4;
-    min-width: 359px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list {
-    order: 1;
-    margin-right: 209px;
-    min-width: 375px;
-  }
-
-  .site-list__item:nth-child(1) {
-    padding-right: 36px;
-  }
-
-  .main-logo {
-    margin-right: 67px;
-    margin-left: 109px;
-    min-width: 149px;
-    order: 2;
-  }
-
-  .user-list {
-    order: 3;
-    min-width: 350px;
-  }
-
-  .user-list__basket {
-    text-align: right;
-  }
-
-  .marketing-list__search {
-    max-width: 84px;
-  }
-
-  .marketing-list__basket {
-    max-width: 265px;
-  }
-
-  .marketing-list {
-    display: block;
-    margin-right: 529px;
-    order: 4;
-  }
-
-  .delivery-list {
-    min-width: 259px;
-    order: 5;
-  }
-}
-
-.main-nav__toggle {
-  display: none;
 }
 
 .page-header__image {

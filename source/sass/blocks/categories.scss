@@ -5,21 +5,38 @@
   color: $basic-white;
   margin-bottom: 31px;
   min-height: 489px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .categories__header {
   background-color: $wave-gray;
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
+  padding-top: 144px;
+  min-height: 229px;
+  margin: 0 -30px;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-desktop2.jpg");
     background-repeat: no-repeat;
+    padding-top: 154px;
+    min-height: 529px;
+    margin: 0 -50px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-desktop2.jpg");
+    background-image: url("../img/hero-desktop3.jpg");
     background-repeat: no-repeat;
+    padding-top: 158px;
+    min-height: 746px;
   }
 }
 
@@ -28,17 +45,20 @@
   font-size: 27px;
   line-height: 30px;
   color: $basic-black;
-  padding-top: 73px;
   text-align: center;
-  padding-bottom: 120px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 71px 374px 106px;
+    max-width: 668px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 158px 175px 355px 205px;
+    max-width: 700px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -48,15 +68,31 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 668px;
+  }
+}
+
+.categories__item {
+  min-height: 103px;
+  margin: 0 -30px;
+
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+    min-width: 351px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 525px;
+    margin: 0;
   }
 }
 
 .categories__item:nth-child(1) {
   background-color: $tiffany;
-  min-height: 103px;
-  margin: 0 -30px;
 
   &:hover {
     background-color: $tiffany-hover;
@@ -64,24 +100,11 @@
 
   &:active {
     background-color: $tiffany-hover;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 119px;
-    min-width: 334px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 525px;
-    margin: 0;
   }
 }
 
 .categories__item:nth-child(2) {
   background-color: $dark-tiffany;
-  min-height: 103px;
-  margin: 0 -30px;
 
   &:hover {
     background-color: $dark-tiffany-hover;
@@ -89,17 +112,6 @@
 
   &:active {
     background-color: $dark-tiffany-hover;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 119px;
-    min-width: 334px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 525px;
-    margin: 0;
   }
 }
 

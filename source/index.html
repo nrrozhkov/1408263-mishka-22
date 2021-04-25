@@ -22,14 +22,14 @@
           <li class="site-list__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
           <li class="site-list__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
         </ul>
-        <div class="main-nav__list user-list">
-          <a href="#" class="main-nav__link user-list__search">Поиск по сайту</a>
-          <a class="main-nav__link user-list__basket" href="#">Корзина</a>
-        </div>
-        <div class="marketing-list">
-          <a href="#" class="marketing-list__item">Новые поступления</a>
-          <a href="#" class="marketing-list__item">Распродажа</a>
-        </div>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__search"><a href="#" class="main-nav__link">Поиск по сайту</a></li>
+          <li class="user-list__item user-list__basket"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="marketing-list">
+          <li class="marketing-list__item"><a href="#" class="marketing-list__item">Новые поступления</a></li>
+          <li class="marketing-list__item"><a href="#" class="marketing-list__item">Распродажа</a></li>
+        </ul>
         <div class="delivery-list">
           <a href="#" class="delivery-list__item">Бесплатная доставка по России</a>
         </div>
@@ -104,7 +104,7 @@
               <p class="reviews__author">Анастасия Красильникова</p>
               <p class="reviews__username">@misssssiskras</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item visually-hidden">
+            <blockquote class="reviews__item slider__item">
               <p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
                 количества лайков, как у популярных инстамамочек.
                 В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -112,7 +112,7 @@
               <p class="reviews__contact">Екатерина Красильникова</p>
               <p class="reviews__username">@misssssiskras2</p>
             </blockquote>
-            <blockquote class="reviews__item slider__item visually-hidden">
+            <blockquote class="reviews__item slider__item">
               <p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
                 такого количества лайков, как у популярных инстамамочек.
                 В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -130,38 +130,48 @@
       </section>
       <section class="contact-us">
         <div class=" contact-us__list">
+          <div class="contact-us__list-info">
             <h3 class="contact-us__header">Контакты</h3>
-            <p class="contact-us__headline">email:</p>
-            <a class="contact-us__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            <p class="contact-us__headline">адрес:</p>
-            <p class="contact-us__info">г. Санкт-Петербург<br>ул. Большая Конюшенная  д. 19/8, офис 101</p>
-          <div class="contact-us__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619037385102!5m2!1sru!2sru" width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-us__mail">
+              <p class="contact-us__headline">email:</p>
+              <a class="contact-us__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </div>
+            <div class="contact-us__address">
+              <p class="contact-us__headline">адрес:</p>
+              <p class="contact-us__info">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</p>
+            </div>
           </div>
-          <a class="contact-us__button button" href="#">напишите нам</a>
+          <div class="contact-us__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619037385102!5m2!1sru!2sru"
+              width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="contact-us__btn">
+            <a class="contact-us__button button" href="#">напишите нам</a>
+          </div>
         </div>
       </section>
     </div>
   </main>
   <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-            src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
-      </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+          src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
+    </div>
   </footer>
 </body>
 

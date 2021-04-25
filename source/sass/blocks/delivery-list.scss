@@ -3,6 +3,21 @@
   line-height: 24px;
   font-weight: 400;
   text-decoration: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+    order: 4;
+    min-width: 326px;
+    margin-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 259px;
+    order: 5;
+    margin-left: 290px;
+  }
 }
 
 .delivery-list__item {

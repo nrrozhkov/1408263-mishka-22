@@ -1,10 +1,26 @@
 .marketing-list {
+  list-style: none;
   text-decoration: none;
   font-weight: 700;
   font-size: 15px;
   line-height: 24px;
+  margin-top: 0;
+  padding: 0;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-right: 402px;
+    order: 4;
+  }
 }
 
 .marketing-list__item {
   color: $basic-black;
+}
+
+.marketing-list__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    padding-right: 45px;
+  }
 }
