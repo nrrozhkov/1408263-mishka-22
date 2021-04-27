@@ -23,8 +23,15 @@ a {
 .wrapper {
   padding: 0 30px;
   margin: 0 auto;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

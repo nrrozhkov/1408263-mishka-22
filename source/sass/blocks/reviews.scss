@@ -9,7 +9,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/reviewdesktop.jpg");
     background-repeat: no-repeat;
-    margin: 0;
+    margin: 0 50px;
     margin-bottom: 71px;
   }
 }
@@ -65,7 +65,7 @@
 .reviews__text {
   max-width: 260px;
   margin: 0;
-  padding-bottom: 33px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;

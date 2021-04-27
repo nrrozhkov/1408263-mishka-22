@@ -13,7 +13,10 @@
   }
 }
 
-.slider__item:nth-child(2),
-.slider__item:last-child {
+.slider__item {
   display: none;
+}
+
+.slider__item-current {
+  display: block;
 }

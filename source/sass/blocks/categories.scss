@@ -20,15 +20,16 @@
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
   padding-top: 144px;
-  min-height: 229px;
-  margin: 0 -30px;
+  min-height: 373px;
   background-size: 100%;
+  margin: 0 -30px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-desktop2.jpg");
     background-repeat: no-repeat;
     padding-top: 154px;
     min-height: 529px;
+    background-size: 100%;
     margin: 0 -50px;
   }
 
@@ -46,8 +47,10 @@
   line-height: 30px;
   color: $basic-black;
   text-align: center;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
+  max-width: 260px;
 
   @media (min-width: $tablet-width) {
     max-width: 668px;
@@ -77,17 +80,20 @@
 .categories__item {
   min-height: 103px;
   margin: 0 -30px;
-
+  padding-top: 24px;
+  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
     min-width: 351px;
     margin: 0;
+    padding-left: 35px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
-    margin: 0;
+    padding-left: 37px;
   }
 }
 
@@ -101,6 +107,10 @@
   &:active {
     background-color: $tiffany-hover;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
 }
 
 .categories__item:nth-child(2) {
@@ -113,8 +123,13 @@
   &:active {
     background-color: $dark-tiffany-hover;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 50px;
+  }
 }
 
 .categories__link {
+  max-width: 130px;
   color: $basic-white;
 }
