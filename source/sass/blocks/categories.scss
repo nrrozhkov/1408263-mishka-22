@@ -5,13 +5,16 @@
   color: $basic-white;
   margin-bottom: 31px;
   min-height: 489px;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+    margin-top: -45px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
+    margin-top: -42px;
   }
 }
 
@@ -22,7 +25,6 @@
   padding-top: 144px;
   min-height: 373px;
   background-size: 100%;
-  margin: 0 -30px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-desktop2.jpg");
@@ -30,7 +32,6 @@
     padding-top: 154px;
     min-height: 529px;
     background-size: 100%;
-    margin: 0 -50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,27 +74,29 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-width: 668px;
+    max-width: 778px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
   }
 }
 
 .categories__item {
   min-height: 103px;
-  margin: 0 -30px;
   padding-top: 24px;
   padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
-    min-width: 351px;
     margin: 0;
-    padding-left: 35px;
     padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
-    padding-left: 37px;
   }
 }
 
@@ -107,10 +110,6 @@
   &:active {
     background-color: $tiffany-hover;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-left: 50px;
-  }
 }
 
 .categories__item:nth-child(2) {
@@ -123,13 +122,8 @@
   &:active {
     background-color: $dark-tiffany-hover;
   }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 50px;
-  }
 }
 
 .categories__link {
-  max-width: 130px;
   color: $basic-white;
 }

@@ -8,16 +8,15 @@
     display: block;
     text-align: right;
     order: 4;
-    margin-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 259px;
     order: 5;
-    margin-left: 290px;
   }
 }
 
 .delivery-list__item {
+  margin: 0;
   color: $font-gray;
 }

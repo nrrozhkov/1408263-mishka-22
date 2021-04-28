@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
-
+    <div class="wrapper">
       <nav class="main-nav">
         <div class="main-nav__logo main-logo">
           <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg"
@@ -34,13 +34,14 @@
           <p class="delivery-list__item">Бесплатная доставка по России</p>
         </div>
       </nav>
-
+    </div>
   </header>
   <main class="page-main">
     <section class="categories">
-
       <header class="categories__header">
-        <h1 class="categories__title">Милые штучки ручной работы для дома</h1>
+        <div class="wrapper">
+          <h1 class="categories__title">Милые штучки ручной работы для дома</h1>
+        </div>
       </header>
       <ul class="categories__list">
         <li class="categories__item"><a href="#" class="categories__link">Предметы интерьера</a></li>
@@ -97,8 +98,8 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="wrapper">
-        <div class="slider">
+      <div class="slider">
+        <div class="wrapper slider__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item slider__item-current">
@@ -136,47 +137,56 @@
       </div>
     </section>
     <section class="contact-us">
+      <div class="wrapper contact-us-wrapper">
         <div class=" contact-us__list">
-          <div class="contact-us__list-info">
-            <h3 class="contact-us__header">Контакты</h3>
-            <div class="contact-us__mail">
-              <p class="contact-us__headline">email:</p>
-              <a class="contact-us__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </div>
-            <div class="contact-us__address">
-              <p class="contact-us__headline">адрес:</p>
-              <p class="contact-us__info">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</p>
-            </div>
+          <h3 class="contact-us__header">Контакты</h3>
+          <div class="contact-us__mail">
+            <p class="contact-us__headline">email:</p>
+            <a class="contact-us__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contact-us__address">
+            <p class="contact-us__headline">адрес:</p>
+            <p class="contact-us__info">г. Санкт-Петербург<br>ул. Большая Конюшенная д. 19/8, офис 101</p>
           </div>
         </div>
+      </div>
       <div class="contact-us__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1619037385102!5m2!1sru!2sru"
           width="320" height="454" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="contact-us__btn">
+      </div>
+      <div class="contact-us__btn">
+        <div class="wrapper contact-us__btn-wrapper">
           <a class="contact-us__button button" href="#">напишите нам</a>
         </div>
+      </div>
     </section>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
-          src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
+    <div class="wrapper page-footer__wrapper">
+      <div class="page-footer__logo footer-logo">
+        <a class="footer-logo__link" href="#"><img src="img/logo-footer.svg"
+            alt="Логотип компании магазина вязаных изделий Мишка" width="102" height="29"></a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" aria-label="Мишка в Вконтакте" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/htmlacademycopyright.svg" alt="Логотип HTML Academy" width="27" height="34"></a>
+      </div>
     </div>
   </footer>
 </body>
