@@ -4,6 +4,11 @@
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 670px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
   }
 }
 
