@@ -1,0 +1,13 @@
+.contact-fieldset {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $wave-gray;
+    padding-top: 66px;
+  }
+}
+
+.contact-fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+}

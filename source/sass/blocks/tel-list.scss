@@ -1,4 +1,29 @@
 .tel-list {
+  display: flex;
+  flex-direction: column;
   border: none;
+  padding: 0;
+  margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.tel-list__title {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 105px;
+  }
+}
+
+.tel-list__item {
+  border: none;
+  border-bottom: 2px solid $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }

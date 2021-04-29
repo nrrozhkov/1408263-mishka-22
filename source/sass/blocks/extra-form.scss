@@ -1,10 +1,52 @@
 .extra-form {
   border: none;
-  margin-bottom: 35px;
+  padding: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+}
+
+.extra-form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 47px;
+  }
+}
+
+.extra-form__title {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 59px;
+  }
 }
 
 .extra-form__item {
+  font-family: "Open sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  color: $contact-grey;
   border: 2px solid $font-gray;
+  min-height: 142px;
+  width: 100%;
 
   &:hover {
     border: 2px solid $tiffany;

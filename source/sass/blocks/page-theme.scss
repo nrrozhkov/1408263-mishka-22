@@ -1,9 +1,38 @@
 .page-theme {
   background-color: $wave-gray;
+  padding-top: 74px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 101px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+    margin-bottom: 111px;
+  }
 }
 
 .page-theme__title {
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
+  min-height: 177px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 418px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 507px;
+  }
 }

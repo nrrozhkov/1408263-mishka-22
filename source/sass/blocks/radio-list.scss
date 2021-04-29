@@ -1,10 +1,73 @@
 .radio-list {
   border: none;
-  margin-bottom: 31px;
+  margin-bottom: 51px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.radio-list__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .radio-list__name {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.radio-list__name:first-of-type {
+  margin-bottom: 24px;
+  padding-left: 83px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 78px;
+    margin-left: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-left: 215px;
+  }
+}
+
+.radio-list__name:last-of-type {
+  padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 78px;
+    margin-left: 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-left: 215px;
+  }
+}
+
+.radio-list__values {
+  display: flex;
+  flex-direction: column;
 }

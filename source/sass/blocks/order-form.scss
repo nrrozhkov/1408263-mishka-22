@@ -11,4 +11,8 @@
   line-height: 16px;
   color: $tiffany;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 47px;
+  }
 }
