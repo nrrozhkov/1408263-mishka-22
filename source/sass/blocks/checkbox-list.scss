@@ -1,10 +1,55 @@
 .checkbox-list {
   border: none;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 304px;
+    background-color: $wave-gray;
+    padding-top: 66px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+}
+
+.checkbox-list__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.checkbox-list__values {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 465px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 827px;
+  }
 }
 
 .checkbox-list__name {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+  padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 18px;
+    min-width: 197px;
+    padding-left: 82px;
+    padding-bottom: 60px;
+  }
 }

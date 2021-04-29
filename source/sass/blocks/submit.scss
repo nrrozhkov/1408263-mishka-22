@@ -1,0 +1,49 @@
+.submit {
+  margin-bottom: 55px;
+}
+
+.submit__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+  }
+}
+
+.submit__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $font-gray;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+    min-width: 327px;
+    order: 2;
+  }
+}
+
+.submit__button {
+  font-size: 17px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-right: 109px;
+    padding: 18px 32px;
+    min-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 17px;
+  }
+}
