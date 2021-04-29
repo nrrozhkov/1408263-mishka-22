@@ -1,3 +1,38 @@
-.class {
-  // class
+.user-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    min-width: 398px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+    padding: 0;
+  }
+}
+
+.user-list__search {
+  @media (min-width: $tablet-width) {
+    max-width: 84px;
+  }
+}
+
+.user-list__basket {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    padding-left: 141px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: right;
+  }
 }

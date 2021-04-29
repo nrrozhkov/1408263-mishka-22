@@ -1,3 +1,40 @@
-.class {
-  // class
+.slider {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/reviewtablet.jpg");
+    background-repeat: no-repeat;
+    padding-top: 83px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 0 50px;
+    padding-left: 175px;
+    padding-top: 83px;
+    margin: 0 auto;
+  }
+}
+
+.slider__item {
+  display: none;
+  margin: 0;
+}
+
+.slider__item-current {
+  display: block;
+}
+
+.slider__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

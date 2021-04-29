@@ -4,12 +4,42 @@
   line-height: 24px;
   color: $basic-white;
   margin-bottom: 31px;
+  min-height: 489px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    margin-top: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+    margin-top: -42px;
+  }
 }
 
 .categories__header {
   background-color: $wave-gray;
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
+  padding-top: 144px;
+  min-height: 373px;
+  background-size: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-repeat: no-repeat;
+    padding-top: 154px;
+    min-height: 529px;
+    background-size: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-desktop3.jpg");
+    background-repeat: no-repeat;
+    padding-top: 158px;
+    min-height: 746px;
+  }
 }
 
 .categories__title {
@@ -17,10 +47,57 @@
   font-size: 27px;
   line-height: 30px;
   color: $basic-black;
+  text-align: center;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 260px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .categories__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 778px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+.categories__item {
+  min-height: 103px;
+  padding-top: 24px;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 119px;
+    margin: 0;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 525px;
+  }
 }
 
 .categories__item:nth-child(1) {

@@ -1,3 +1,23 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.page-header__logo {
+  height: 79px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    height: 89px;
+    max-width: 670px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 89px;
+  }
+}
+
 .page-header__image {
   &:hover {
     opacity: 0.6;

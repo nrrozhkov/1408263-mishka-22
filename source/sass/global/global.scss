@@ -19,3 +19,24 @@ img {
 a {
   text-decoration: none;
 }
+
+.wrapper {
+  padding: 0 30px;
+  margin: 0 auto;
+  max-width: 330px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 778px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

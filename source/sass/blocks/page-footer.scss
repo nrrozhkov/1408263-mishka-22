@@ -2,4 +2,22 @@
   font-size: 19px;
   line-height: 19px;
   background-color: $wave-gray;
+  min-height: 160px;
+}
+
+.page-footer__wrapper {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 51px;
+    min-height: 143px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
 }
