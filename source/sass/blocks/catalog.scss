@@ -1,3 +1,10 @@
-.class {
-  color: white;
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 51px;
+  }
 }
