@@ -16,8 +16,23 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 77px;
+    padding-top: 50px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    margin-right: 122px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 312px;
+  }
 }

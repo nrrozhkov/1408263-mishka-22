@@ -10,8 +10,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-right: 402px;
-    order: 4;
+    padding-top: 17px;
   }
 }
 
@@ -21,6 +20,6 @@
 
 .marketing-list__item:nth-child(1) {
   @media (min-width: $desktop-width) {
-    padding-right: 45px;
+    padding-right: 32px;
   }
 }

@@ -1,29 +1,14 @@
 .categories {
+  position: relative;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
   margin-bottom: 31px;
-  min-height: 489px;
-  z-index: 2;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-    margin-top: -45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 54px;
-    margin-top: -42px;
-  }
-}
-
-.categories__header {
   background-color: $wave-gray;
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
-  padding-top: 144px;
-  min-height: 373px;
+  padding-top: 73px;
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
@@ -31,14 +16,53 @@
     background-repeat: no-repeat;
     padding-top: 154px;
     min-height: 529px;
-    background-size: 100%;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-desktop3.jpg");
+    margin-bottom: 54px;
+    padding-bottom: 5px;
+  }
+}
+
+.categories::after {
+  @media (min-width: $tablet-width) {
     background-repeat: no-repeat;
-    padding-top: 158px;
-    min-height: 746px;
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    max-height: 34px;
+    padding-top: 2.95652%;
+    background-image: url("../img/white-wave-tablet.svg");
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    max-height: 34px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+  }
+}
+
+.categories__header {
+  margin-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 357px;
   }
 }
 
@@ -72,6 +96,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 778px;
@@ -80,23 +106,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: 1150px;
   }
 }
 
 .categories__item {
+  position: relative;
   min-height: 103px;
-  padding-top: 24px;
-  padding-left: 60px;
+  padding-top: 25px;
+  padding-left: 31px;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
     margin: 0;
     padding-top: 25px;
+    padding-left: 37px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
+    padding-top: 25px;
+    padding-left: 37px;
+    padding-right: 298px;
   }
 }
 
@@ -112,6 +143,25 @@
   }
 }
 
+.categories__item:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/interior-lamp.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 62px;
+  right: 47px;
+
+  @media (min-width: $tablet-width) {
+    left: 257px;
+    bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 451px;
+  }
+}
+
 .categories__item:nth-child(2) {
   background-color: $dark-tiffany;
 
@@ -124,6 +174,28 @@
   }
 }
 
+.categories__item:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/interior-brick.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  right: 36px;
+
+  @media (min-width: $tablet-width) {
+    right: 33px;
+    top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 37px;
+  }
+}
+
 .categories__link {
   color: $basic-white;
+  margin-right: 154px;
+  max-width: 130px;
+  text-align: left;
 }

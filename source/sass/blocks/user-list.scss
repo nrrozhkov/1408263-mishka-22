@@ -6,33 +6,103 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-basis: 100%;
     flex-direction: row;
-    order: 2;
-    min-width: 398px;
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
+    justify-content: flex-end;
+    order: -1;
   }
 
   @media (min-width: $desktop-width) {
-    order: 3;
+    flex-basis: auto;
     padding: 0;
+    margin-left: 292px;
+    order: 0;
+  }
+}
+
+.user-list__item {
+  padding-top: 29px;
+  padding-bottom: 27px;
+  border-top: 1px solid $border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+    border-top: none;
   }
 }
 
 .user-list__search {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 27px;
+  border-top: 1px solid $border-gray;
+
   @media (min-width: $tablet-width) {
-    max-width: 84px;
+    padding: 0;
+    width: 84px;
+    height: 88px;
+    border-left: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+    border-bottom: none;
+    border-top: none;
+
+    span {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}
+
+.user-list__search::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 32px;
+  top: 28px;
+
+  @media (min-width: $tablet-width) {
+    top: 36px;
   }
 }
 
 .user-list__basket {
+  position: relative;
+  border-bottom: 1px solid $border-gray;
+
   @media (min-width: $tablet-width) {
-    text-align: right;
-    padding-left: 141px;
+    width: 264px;
+    border-bottom: none;
+    padding: 0;
+    padding-top: 34px;
+    padding-left: 80px;
+  }
+}
+
+.user-list__basket::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/cart.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+  left: 30px;
+
+  &:hover {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/cart.svg");
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    left: 30px;
   }
 
-  @media (min-width: $desktop-width) {
-    text-align: right;
+  @media (min-width: $tablet-width) {
+    left: 29px;
+    top: 35px;
   }
 }

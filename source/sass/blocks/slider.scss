@@ -2,15 +2,20 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/reviewtablet.jpg");
     background-repeat: no-repeat;
-    padding-top: 83px;
+    padding-top: 71px;
     padding-right: 50px;
+    padding-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    background-image: url("../img/reviewdesktop.jpg");
+    background-repeat: no-repeat;
+    max-width: 1050px;
+    min-height: 456px;
     padding: 0 50px;
     padding-left: 175px;
-    padding-top: 83px;
+    padding-top: 79px;
+    padding-bottom: 166px;
     margin: 0 auto;
   }
 }
@@ -36,5 +41,42 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+  }
+}
+
+.slider__toggles {
+  margin: 0;
+  margin-bottom: 35px;
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 137px;
+    left: 551px;
+    top: 357px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    left: 1048px;
+    top: 320px;
+  }
+}
+
+.slider__toggle {
+  width: 50%;
+  border: 1px solid $border-gray;
+  padding: 13px 40px 13px 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    border: none;
+    padding: 0 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 18px;
   }
 }
