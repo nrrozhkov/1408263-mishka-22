@@ -3,7 +3,8 @@
   font-size: 17px;
   line-height: 20px;
   margin-bottom: 58px;
-  padding-top: 38px;
+  padding-top: 31px;
+  padding-left: 10px;
 
   @media (min-width: $tablet-width) {
     padding-top: 78px;
@@ -21,72 +22,69 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 83px;
+  margin-bottom: 30px;
 
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 43px;
-    margin-bottom: 99px;
+    margin-bottom: 49px;
+    margin-left: -5px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 95px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 175px;
   }
 }
 
 .about-us__list {
   list-style: none;
-  display: grid;
   margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin-left: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    padding-left: 200px;
+    padding-left: 175px;
+    grid-template-columns: 242px 293px;
+    grid-column-gap: 108px;
   }
 }
 
 .about-us__item {
+  padding-top: 53px;
   position: relative;
-  margin-bottom: 83px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 111px;
+    margin-bottom: 59px;
+    padding-top: 51px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    padding-top: 5px;
-    margin-bottom: 104px;
+    padding-top: 0;
+    margin-bottom: 111px;
   }
 }
 
 .about-us__item:last-child {
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: -100px;
-  }
+  margin: 0;
 }
 
 
 .about-us__item--eco {
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-    padding-top: 5px;
   }
 }
 
@@ -98,14 +96,17 @@
   background-repeat: no-repeat;
   width: 33px;
   height: 38px;
-  bottom: 57px;
+  top: -2px;
   left: 8px;
+
+  @media (min-width: $desktop-width) {
+    top: -56px;
+  }
 }
 
 .about-us__item--price {
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
-    padding-top: 3px;
   }
 }
 
@@ -117,14 +118,21 @@
   background-repeat: no-repeat;
   width: 47px;
   height: 27px;
-  bottom: 66px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -56px;
+  }
 }
 
 .about-us__item--likes {
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     margin: 0;
-    padding-top: 3px;
   }
 }
 
@@ -136,12 +144,16 @@
   background-repeat: no-repeat;
   width: 43px;
   height: 27px;
-  bottom: 62px;
+  top: -2px;
   left: 8px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 66px;
+  }
 
 
   @media (min-width: $desktop-width) {
-    bottom: 170px;
+    top: -50px;
   }
 }
 
@@ -149,11 +161,6 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding-top: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -100px;
   }
 }
 
@@ -165,11 +172,15 @@
   background-repeat: no-repeat;
   width: 35px;
   height: 34px;
-  bottom: 59px;
+  top: -2px;
   left: 2px;
 
   @media (min-width: $tablet-width) {
-    bottom: 61px;
+    bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -52px;
   }
 }
 
@@ -177,11 +188,6 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 2/3;
-    padding-top: 3px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: -100px;
   }
 }
 
@@ -193,11 +199,15 @@
   background-repeat: no-repeat;
   width: 55px;
   height: 23px;
-  bottom: 67px;
+  top: -2px;
   left: -6px;
 
   @media (min-width: $tablet-width) {
-    bottom: 70px;
+    bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -52px;
   }
 }
 
@@ -205,12 +215,10 @@
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
     grid-row: 3/4;
-    padding-top: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding-top: 107px;
   }
 }
 
@@ -222,7 +230,7 @@
   background-repeat: no-repeat;
   width: 33px;
   height: 33px;
-  bottom: 60px;
+  top: -2px;
   left: 3px;
 
   @media (min-width: $tablet-width) {
@@ -230,7 +238,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 161px;
-    right: 50px;
+    top: -56px;
   }
 }

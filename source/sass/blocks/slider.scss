@@ -1,23 +1,29 @@
 .slider {
+  padding: 0 30px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
+    min-height: 457px;
     background-image: url("../img/reviewtablet.jpg");
     background-repeat: no-repeat;
-    padding-top: 71px;
-    padding-right: 50px;
-    padding-bottom: 83px;
+    background-position: 0 0;
+    background-size: 350px 457px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/reviewdesktop.jpg");
     background-repeat: no-repeat;
+    background-position: 0 0;
     max-width: 1050px;
     min-height: 456px;
-    padding: 0 50px;
     padding-left: 175px;
-    padding-top: 79px;
-    padding-bottom: 166px;
+    padding-bottom: 66px;
     margin: 0 auto;
   }
+}
+
+.slider__list {
+  margin-bottom: 28px;
 }
 
 .slider__item {
@@ -30,23 +36,25 @@
 }
 
 .slider__wrapper {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: auto;
+    padding: 80px 21px 0;
   }
 
   @media (min-width: $desktop-width) {
+    width: 876px;
     padding: 0;
+    padding-top: 79px;
   }
 }
 
 .slider__toggles {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   display: flex;
   width: 100%;
 
@@ -54,26 +62,27 @@
     position: absolute;
     content: "";
     width: 137px;
-    left: 551px;
-    top: 357px;
+    right: 82px;
+    bottom: 4px;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    left: 1048px;
-    top: 320px;
+    right: 32px;
+    bottom: 63px;
   }
 }
 
 .slider__toggle {
   width: 50%;
   border: 1px solid $border-gray;
-  padding: 13px 40px 13px 38px;
+  padding: 10px 20px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     border: none;
-    padding: 0 16px;
+    padding: 0 17px;
   }
 
   @media (min-width: $desktop-width) {

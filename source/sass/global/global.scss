@@ -21,17 +21,16 @@ a {
 }
 
 .wrapper {
-  padding: 0 30px;
+  position: relative;
   margin: 0 auto;
-  max-width: 330px;
+  max-width: 270px;
 
   @media (min-width: $tablet-width) {
-    max-width: 778px;
-    padding: 0 50px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: 1050px;
   }
 }
 

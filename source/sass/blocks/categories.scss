@@ -5,17 +5,9 @@
   line-height: 24px;
   color: $basic-white;
   margin-bottom: 31px;
-  background-color: $wave-gray;
-  background-image: url("../img/background-toys-mobile.jpg");
-  background-repeat: no-repeat;
-  padding-top: 73px;
-  background-size: 100%;
+  background-color: $categories-gray;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/hero-desktop2.jpg");
-    background-repeat: no-repeat;
-    padding-top: 154px;
-    min-height: 529px;
     margin-bottom: 55px;
   }
 
@@ -54,16 +46,28 @@
   }
 }
 
-.categories__header {
-  margin-bottom: 120px;
+.categories__title-wrapper {
+  background-color: $wave-gray;
+  background-image: url("../img/background-toys-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 283px;
+  padding: 74px 30px 120px;
+  background-position: 0 -15px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 372px;
+    background-image: url("../img/hero-desktop2.jpg");
+    background-position: 50% 0;
+    padding-top: 155px;
+    padding-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 357px;
+    padding-bottom: 356px;
   }
+}
+
+.categories__header {
+  margin: 0;
 }
 
 .categories__title {
@@ -73,14 +77,12 @@
   color: $basic-black;
   text-align: center;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 260px;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
     font-size: 43px;
     line-height: 50px;
+    margin: 0 auto;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,20 +115,16 @@
 .categories__item {
   position: relative;
   min-height: 103px;
-  padding-top: 25px;
-  padding-left: 31px;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
     margin: 0;
-    padding-top: 25px;
-    padding-left: 37px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
-    padding-top: 25px;
-    padding-left: 37px;
+    padding-top: 3px;
+    padding-left: 7px;
     padding-right: 298px;
   }
 }
@@ -143,14 +141,15 @@
   }
 }
 
-.categories__item:nth-child(1)::before {
+.categories__interior::after {
   position: absolute;
   content: "";
   background-image: url("../img/interior-lamp.svg");
   background-repeat: no-repeat;
   width: 40px;
   height: 62px;
-  right: 47px;
+  right: 36px;
+  top: 23px;
 
   @media (min-width: $tablet-width) {
     left: 257px;
@@ -158,7 +157,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 451px;
+    left: 442px;
   }
 }
 
@@ -174,14 +173,15 @@
   }
 }
 
-.categories__item:nth-child(2)::before {
+.categories__toys::before {
   position: absolute;
   content: "";
   background-image: url("../img/interior-brick.svg");
   background-repeat: no-repeat;
   width: 60px;
   height: 60px;
-  right: 36px;
+  right: 26px;
+  top: 21px;
 
   @media (min-width: $tablet-width) {
     right: 33px;
@@ -189,13 +189,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    right: 37px;
+    left: 423px;
   }
 }
 
 .categories__link {
-  color: $basic-white;
-  margin-right: 154px;
-  max-width: 130px;
+  display: block;
+  position: relative;
   text-align: left;
+  color: $basic-white;
+  padding: 22px 120px 29px 30px;
+  cursor: pointer;
 }
