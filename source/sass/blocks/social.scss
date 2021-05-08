@@ -22,4 +22,8 @@
   width: 142px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }

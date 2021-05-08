@@ -63,13 +63,14 @@
     content: "";
     width: 137px;
     right: 82px;
-    bottom: 4px;
+    bottom: 45px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
     right: 32px;
-    bottom: 63px;
+    bottom: 93px;
   }
 }
 

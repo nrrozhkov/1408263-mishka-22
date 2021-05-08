@@ -47,7 +47,7 @@
 }
 
 .categories__title-wrapper {
-  background-color: $wave-gray;
+  background-color: $categories-gray;
   background-image: url("../img/background-toys-mobile.jpg");
   background-repeat: no-repeat;
   min-height: 283px;
@@ -153,7 +153,7 @@
 
   @media (min-width: $tablet-width) {
     left: 257px;
-    bottom: 29px;
+    top: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,6 +198,14 @@
   position: relative;
   text-align: left;
   color: $basic-white;
-  padding: 22px 120px 29px 30px;
+  padding: 24px 120px 29px 30px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 120px 29px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 120px 29px 29px;
+  }
 }

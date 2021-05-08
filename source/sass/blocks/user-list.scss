@@ -102,7 +102,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    left: 29px;
+    left: 32px;
     top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 31px;
   }
 }

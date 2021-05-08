@@ -101,7 +101,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 17px;
-    text-align: center;
+    text-align: right;
     padding-top: 2px;
     margin-right: 34px;
     width: 70px;
@@ -110,10 +110,10 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 17px;
+    text-align: right;
     margin: 0;
     order: 1;
     padding-left: 45px;
-    text-align: center;
     padding-top: 79px;
     width: 100px;
     margin-right: 75px;
@@ -283,7 +283,7 @@
     position: absolute;
     content: "";
     width: 100%;
-    padding-right: 376px;
+    padding-right: 379px;
     bottom: -12px;
     left: 0;
   }
