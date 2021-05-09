@@ -5,11 +5,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-right: 122px;
+    margin-right: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 312px;
+    margin-right: 238px;
     padding-top: 4px;
   }
 }
@@ -17,13 +17,25 @@
 .social__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 250px;
   flex-wrap: wrap;
-  width: 142px;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin-right: 41px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 39px;
   }
 }

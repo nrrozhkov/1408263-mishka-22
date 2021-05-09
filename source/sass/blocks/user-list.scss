@@ -21,8 +21,7 @@
 }
 
 .user-list__item {
-  padding-top: 29px;
-  padding-bottom: 27px;
+  padding: 0;
   border-top: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
@@ -34,8 +33,6 @@
 
 .user-list__search {
   position: relative;
-  padding-top: 24px;
-  padding-bottom: 27px;
   border-top: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {
@@ -90,6 +87,7 @@
   width: 18px;
   height: 18px;
   left: 30px;
+  bottom: 33px;
 
   &:hover {
     position: absolute;

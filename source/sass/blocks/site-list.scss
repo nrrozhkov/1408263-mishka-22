@@ -20,8 +20,7 @@
 }
 
 .site-list__item {
-  padding-top: 29px;
-  padding-bottom: 27px;
+  padding: 0;
   border-top: 1px solid $border-gray;
 
   @media (min-width: $tablet-width) {

@@ -1,10 +1,15 @@
 .reviews {
   position: relative;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 85px;
     padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
   }
 }
 
@@ -63,7 +68,6 @@
 .reviews__contact {
   border: 2px solid $font-gray;
   width: 100%;
-  margin-bottom: 45px;
   padding: 16px 65px 14px 66px;
 
   @media (min-width: $tablet-width) {

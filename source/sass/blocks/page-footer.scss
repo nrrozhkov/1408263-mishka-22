@@ -6,11 +6,13 @@
 }
 
 .page-footer__wrapper {
+  padding: 0 30px;
   padding-top: 28px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     padding-top: 51px;
     min-height: 143px;
     flex-direction: row;
@@ -18,7 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 47px;
   }
 }
 
@@ -28,10 +30,10 @@
 
 .page-footer__logo {
   @media (min-width: $tablet-width) {
-    margin-right: 122px;
+    margin-right: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 311px;
+    margin-right: 276px;
   }
 }

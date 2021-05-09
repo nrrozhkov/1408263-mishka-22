@@ -1,6 +1,7 @@
 .slider {
-  padding: 0 30px;
   position: relative;
+  padding: 0 30px;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
@@ -23,7 +24,7 @@
 }
 
 .slider__list {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .slider__item {
@@ -60,30 +61,32 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    content: "";
     width: 137px;
-    right: 82px;
-    bottom: 45px;
+    right: 69px;
+    bottom: 61px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     border: none;
-    right: 32px;
-    bottom: 93px;
+    right: 37px;
+    bottom: 112px;
   }
 }
 
 .slider__toggle {
   width: 50%;
   border: 1px solid $border-gray;
-  padding: 10px 20px;
+  background-color: transparent;
+  padding: 13px 42px 13px 31px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 50px;
+    height: 26px;
     border: none;
-    padding: 0 17px;
+    padding: 0;
+    margin-right: 37px;
   }
 
   @media (min-width: $desktop-width) {

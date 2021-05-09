@@ -1,14 +1,16 @@
 .featured-product {
   position: relative;
   padding-bottom: 41px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 130px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 131px;
+    padding-bottom: 27px;
+    margin-bottom: 48px;
   }
 }
 
@@ -21,9 +23,9 @@
 .featured-product::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   width: 100%;
-  height: 6px;
+  height: 12px;
   background-image: url("../img/zigzag-line-mobile.svg");
   background-repeat: repeat-x;
   background-size: 100%;
@@ -33,7 +35,7 @@
     background-image: url("../img/zigzag-line-tablet.svg");
     height: 17px;
     width: 100%;
-    bottom: -82px;
+    bottom: -70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +55,7 @@
   @media (min-width: $desktop-width) {
     justify-content: start;
     z-index: 1;
+    padding-left: 41px;
   }
 }
 
@@ -81,7 +84,7 @@
     line-height: 53px;
     min-width: 545px;
     z-index: 2;
-    padding-top: 73px;
+    padding-top: 75px;
     margin-bottom: 38px;
   }
 }
@@ -110,13 +113,10 @@
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 17px;
-    text-align: right;
     margin: 0;
     order: 1;
-    padding-left: 45px;
-    padding-top: 79px;
-    width: 100px;
-    margin-right: 75px;
+    padding-top: 81px;
+    margin-right: 64px;
   }
 }
 
@@ -130,16 +130,13 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    padding-left: 175px;
   }
 }
 
 .featured-product__specs {
   @media (min-width: $tablet-width) {
     margin-right: 42px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 175px;
   }
 }
 
@@ -257,7 +254,6 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    content: "";
     width: 525px;
     height: 636px;
     top: 0;
@@ -280,19 +276,15 @@
 
 .featured-product__action {
   @media (min-width: $tablet-width) {
-    position: absolute;
-    content: "";
     width: 100%;
     padding-right: 379px;
-    bottom: -12px;
-    left: 0;
+    margin-top: -96px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-top: 9px;
     width: 292px;
-    left: 175px;
-    bottom: -119px;
   }
 }
 
