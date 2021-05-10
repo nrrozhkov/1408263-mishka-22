@@ -8,12 +8,14 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    text-align: right;
     order: 4;
+    margin-left: auto;
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 259px;
-    order: 5;
+    text-align: right;
+    padding-top: 18px;
   }
 }

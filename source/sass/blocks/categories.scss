@@ -1,45 +1,75 @@
 .categories {
+  position: relative;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $basic-white;
   margin-bottom: 31px;
-  min-height: 489px;
-  z-index: 2;
+  background-color: $categories-gray;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-    margin-top: -45px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 54px;
-    margin-top: -42px;
+    padding-bottom: 5px;
+  }
+}
+
+.categories::after {
+  @media (min-width: $tablet-width) {
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    max-height: 34px;
+    padding-top: 2.95652%;
+    background-image: url("../img/white-wave-tablet.svg");
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-repeat: repeat-x;
+    padding: 0;
+    background-position: 50% 50%;
+    background-size: 1250px 100%;
+  }
+}
+
+.categories__title-wrapper {
+  background-color: $categories-gray;
+  background-image: url("../img/background-toys-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 283px;
+  padding: 74px 30px 120px;
+  background-position: center bottom -73px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop2.jpg");
+    background-position: 50% 0;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 356px;
   }
 }
 
 .categories__header {
-  background-color: $wave-gray;
-  background-image: url("../img/background-toys-mobile.jpg");
-  background-repeat: no-repeat;
-  padding-top: 144px;
-  min-height: 373px;
-  background-size: 100%;
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/hero-desktop2.jpg");
-    background-repeat: no-repeat;
-    padding-top: 154px;
-    min-height: 529px;
-    background-size: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-desktop3.jpg");
-    background-repeat: no-repeat;
-    padding-top: 158px;
-    min-height: 746px;
-  }
+  margin: 0;
 }
 
 .categories__title {
@@ -49,14 +79,12 @@
   color: $basic-black;
   text-align: center;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 260px;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
     font-size: 43px;
     line-height: 50px;
+    margin: 0 auto;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +100,8 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 778px;
@@ -80,23 +110,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
+    max-width: 1150px;
   }
 }
 
 .categories__item {
+  position: relative;
   min-height: 103px;
-  padding-top: 24px;
-  padding-left: 60px;
 
   @media (min-width: $tablet-width) {
     min-height: 119px;
     margin: 0;
-    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 525px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 298px;
   }
 }
 
@@ -112,6 +143,26 @@
   }
 }
 
+.categories__interior::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/interior-lamp.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 62px;
+  right: 36px;
+  top: 23px;
+
+  @media (min-width: $tablet-width) {
+    left: 257px;
+    top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 442px;
+  }
+}
+
 .categories__item:nth-child(2) {
   background-color: $dark-tiffany;
 
@@ -124,6 +175,39 @@
   }
 }
 
+.categories__toys::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/interior-brick.svg");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  right: 26px;
+  top: 21px;
+
+  @media (min-width: $tablet-width) {
+    right: 33px;
+    top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 423px;
+  }
+}
+
 .categories__link {
+  display: block;
+  position: relative;
+  text-align: left;
   color: $basic-white;
+  padding: 24px 120px 29px 30px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 120px 29px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 120px 29px 29px;
+  }
 }

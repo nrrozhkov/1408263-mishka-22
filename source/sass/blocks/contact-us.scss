@@ -7,9 +7,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 600px 1fr;
-    max-width: 1200px;
-    padding: 0 50px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 105px;
   }
@@ -23,74 +22,106 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 81px;
+    padding-top: 87px;
+    padding-left: 175px;
     margin: 0;
   }
 }
 
-.contact-us__list {
+.contact-us__table {
   border: none;
   font-size: 14px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-wrap: wrap;
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    flex-direction: column;
     padding-right: 0;
   }
 }
 
+.contact-us__table-inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .contact-us__header {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
+  padding-left: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    max-width: 244px;
     margin: 0;
-    margin-right: 400px;
-    margin-bottom: 49px;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+  }
+}
+
+.contact-us__header::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    background-image: url("../img/flag.svg");
+    width: 47px;
+    height: 81px;
+    left: 618px;
+    top: -23px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
     margin: 0;
-    margin-bottom: 35px;
+    top: -15px;
+    left: -111px;
   }
 }
 
 .contact-us__headline {
   max-width: 76px;
   margin: 0;
-  margin-right: 36px;
+  margin-right: 33px;
 
   @media (min-width: $tablet-width) {
     max-width: 81px;
-    margin-right: 18px;
+    margin-right: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/4;
+    margin-right: 21px;
   }
 }
 
-.contact-us__email {
-  line-height: 30px;
+.contact__us-email-value {
+  position: relative;
   color: $font-gray;
   border-bottom: 1px solid $tiffany;
-  max-width: 76px;
+  padding-bottom: 2px;
+
 
   &:hover {
     color: $tiffany;
@@ -103,22 +134,28 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 187px;
+    font-size: 17px;
+    line-height: 30px;
     max-width: 81px;
     height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/4;
+    padding-bottom: 6px;
   }
 }
 
 .contact-us__mail {
   display: flex;
-  margin-bottom: 62px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 49px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 38px;
+    margin-bottom: 27px;
   }
 }
 
@@ -130,7 +167,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 257px;
+    max-width: 237px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +177,9 @@
 
 .contact-us__map {
   background-image: url("../img/map-mobile.jpg");
-  margin-bottom: 58px;
+  width: 100%;
+  height: 456px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
@@ -151,8 +190,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding: 0;
     grid-column: 2/3;
     grid-row: 1/3;
+    height: 457px;
   }
 }
 
@@ -160,22 +201,32 @@
   width: 100%;
 }
 
-.contact-us__btn {
+.contact-us__button-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 230px;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    padding-left: 175px;
+    padding-left: 27px;
+    padding-top: 36px;
   }
 }
 
-.contact-us__btn .contact-us__button {
-  padding: 16px 38px 16px 37px;
+.contact-us__button {
+  padding: 16px 38px;
+  border: 2px solid $font-gray;
   width: 100%;
+  height: 52px;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 230px;
-    padding: 16px 28px 16px 26px;
+    width: 230px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

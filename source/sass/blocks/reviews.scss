@@ -1,12 +1,43 @@
 .reviews {
-  margin-bottom: 89px;
+  position: relative;
+  margin-bottom: 44px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 131px;
+    margin-bottom: 85px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 71px;
+    padding-bottom: 67px;
+  }
+}
+
+.reviews::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 7px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: 320px 7px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    background-image: url("../img/zigzag-line-tablet.svg");
+    height: 17px;
+    background-size: 768px 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    height: 23px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1050px;
+    background-size: 1050px 23px;
   }
 }
 
@@ -14,43 +45,56 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
+    padding-top: 6px;
     order: -1;
-    max-width: 209px;
+    max-width: 400px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 53px;
+    padding: 0;
   }
 }
 
 .reviews__contact {
-  max-width: 260px;
+  border: 2px solid $font-gray;
+  width: 100%;
+  padding: 16px 65px 14px 66px;
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
     padding: 16px 26px;
     text-align: center;
-    max-height: 52px;
+    width: 175px;
+    height: 52px;
     order: -1;
+    margin: 0;
   }
 }
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 17px;
     line-height: 30px;
-    max-width: 875px;
+    max-width: 814px;
+    margin-bottom: 41px;
   }
 }
 
@@ -59,12 +103,28 @@
   font-size: 17px;
   line-height: 30px;
   margin: 0;
-  padding-bottom: 17px;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
 }
 
 .reviews__username {
   font-size: 17px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    width: 271px;
+    margin: 0;
+  }
 }

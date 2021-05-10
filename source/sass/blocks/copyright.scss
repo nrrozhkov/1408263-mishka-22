@@ -1,12 +1,31 @@
+.copyright {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
+}
+
 .copyright__text {
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
+  margin: 0;
   margin-right: 27px;
 }
 
 .copyright__link {
-  margin-top: 13px;
+  position: relative;
   width: 27px;
   height: 34px;
+}
+
+.copyright__link::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/htmlacademycopyright.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+  bottom: 8px;
 }
