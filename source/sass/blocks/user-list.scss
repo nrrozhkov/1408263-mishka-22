@@ -82,7 +82,7 @@
 .user-list__basket::before {
   position: absolute;
   content: "";
-  background-image: url("../../img/cart.svg");
+  background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
@@ -92,7 +92,7 @@
   &:hover {
     position: absolute;
     content: "";
-    background-image: url("../../img/cart.svg");
+    background-image: url("../img/cart.svg");
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
