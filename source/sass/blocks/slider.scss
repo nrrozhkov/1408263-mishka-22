@@ -91,5 +91,13 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-right: 0;
+  }
+}
+
+.slider__toggle:first-child {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-right: 37px;
   }
 }

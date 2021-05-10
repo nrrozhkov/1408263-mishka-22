@@ -1,11 +1,11 @@
 .featured-product {
   position: relative;
   padding-bottom: 35px;
-  margin-bottom: 37px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 130px;
-    padding-bottom: 0;
+    margin-bottom: 80px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,11 +32,10 @@
   background-size: 320px 7px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     background-image: url("../img/zigzag-line-tablet.svg");
-    height: 17px;
+    height: 24px;
     width: 100%;
-    bottom: -70px;
+    background-size: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,10 +104,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 17px;
-    text-align: right;
+    text-align: center;
     padding-top: 2px;
-    margin-right: 34px;
+    margin-right: 28px;
     max-width: 70px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,7 +117,8 @@
     margin: 0;
     order: 1;
     padding-top: 81px;
-    margin-right: 64px;
+    margin-right: 53px;
+    max-width: 81px;
   }
 }
 
