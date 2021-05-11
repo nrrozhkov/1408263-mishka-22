@@ -1,7 +1,7 @@
 .extra-form {
   border: none;
   padding: 0;
-  margin-bottom: 17px;
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 53px;
@@ -22,19 +22,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 47px;
+    padding-left: 62px;
   }
 }
 
 .extra-form__title {
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 99px;
+    margin-right: 128px;
+    margin-top: 21px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 59px;
+    margin-right: 74px;
+    padding-left: 30px;
   }
 }
 
@@ -45,10 +48,19 @@
   line-height: 18px;
   color: $contact-grey;
   border: 2px solid $font-gray;
-  min-height: 142px;
+  padding: 17px 17px 89px 17px;
+  margin: 0;
   width: 100%;
 
   &:hover {
     border: 2px solid $tiffany;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71%;
   }
 }

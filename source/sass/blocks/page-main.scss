@@ -3,14 +3,13 @@
   line-height: 24px;
   color: $font-gray;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 81px;
     width: 668px;
-    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {

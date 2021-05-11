@@ -1,3 +1,11 @@
+.order-form {
+  padding-left: 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .order-form__desc {
   font-weight: 400;
   font-size: 14px;
@@ -6,13 +14,25 @@
 }
 
 .order-form__heading {
+  position: relative;
+  padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $tiffany;
   text-transform: uppercase;
+}
 
-  @media (min-width: $desktop-width) {
-    padding-left: 47px;
+.order-form__heading::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 62px;
+  width: 198px;
+  height: 1px;
+  background-color: $tiffany;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

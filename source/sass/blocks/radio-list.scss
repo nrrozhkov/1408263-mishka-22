@@ -1,6 +1,6 @@
 .radio-list {
   border: none;
-  margin-bottom: 51px;
+  margin-bottom: 44px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -21,7 +21,23 @@
   }
 }
 
+.radio-list__header {
+  margin-bottom: 35px;
+}
+
+.radio-list__heading {
+  @media (min-width: $tablet-width) {
+    margin-right: 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 78px;
+    padding-left: 60px;
+  }
+}
+
 .radio-list__name {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -43,13 +59,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 55px;
     padding-left: 78px;
-    margin-left: 103px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    margin-left: 215px;
   }
 }
 
@@ -58,16 +73,104 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 78px;
-    margin-left: 103px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 80px;
-    margin-left: 215px;
   }
 }
 
 .radio-list__values {
   display: flex;
   flex-direction: column;
+}
+
+.radio-list__item {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.radio-list__name--accs::before {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  top: -6px;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid $font-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 51px;
+    top: -19px;
+    left: 0;
+  }
+}
+
+.radio-list__name--toy::before {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  top: -13px;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid $font-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 51px;
+    height: 51px;
+    top: -16px;
+    left: 0;
+  }
+}
+
+.radio-list__item:hover + .radio-list__name--accs::before,
+.radio-list__item:hover + .radio-list__name--toy::before {
+  border-color: $tiffany;
+}
+
+.radio-list__item:disabled + .radio-list__name--accs::before,
+.radio-list__item:disabled + .radio-list__name--toy::before {
+  border-color: $font-gray;
+}
+
+.radio-list__item:checked + .radio-list__name--toy::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 14px;
+  border-radius: 50%;
+  background-color: $tiffany;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+    top: -5px;
+    left: 14px;
+  }
+}
+
+.radio-list__item:checked + .radio-list__name--accs::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 8px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: $tiffany;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+    top: -5px;
+    left: 14px;
+  }
 }
