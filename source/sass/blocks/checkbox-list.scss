@@ -1,6 +1,7 @@
 .checkbox-list {
   border: none;
   padding: 0;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     min-height: 304px;
@@ -30,6 +31,8 @@
 }
 
 .checkbox-list__header {
+  margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     padding-top: 17px;
   }
@@ -45,10 +48,9 @@
 .checkbox-list__values {
   display: flex;
   flex-direction: column;
-  padding-top: 34px;
-  padding-left: 1px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -69,7 +71,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  padding-left: 62px;
+  padding-left: 63px;
   margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {

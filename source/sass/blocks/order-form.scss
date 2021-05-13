@@ -1,9 +1,5 @@
 .order-form {
-  padding-left: 7px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
+  margin-bottom: 48px;
 }
 
 .order-form__desc {
@@ -21,6 +17,7 @@
   line-height: 16px;
   color: $tiffany;
   text-transform: uppercase;
+
 }
 
 .order-form__heading::after {
