@@ -2,16 +2,19 @@
   border: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 13px;
   min-height: 298px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 66px;
+    padding-top: 50px;
     margin-bottom: 5px;
+    padding-left: 217px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 50px;
+    margin-bottom: 7px;
+    padding-left: 354px;
   }
 }
 
@@ -22,12 +25,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
 .contacts-list__wrapper {
   @media (min-width: $tablet-width) {
-    width: 75%;
+    width: 501px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,17 +40,19 @@
 }
 
 .contacts-list__heading {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
+  padding-left: 30px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 28px;
-    width: 167px;
+    position: absolute;
+    align-items: start;
+    top: 68px;
+    left: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 177px;
-    padding-left: 61px;
+    top: 71px;
+    left: 226px;
   }
 }
 
@@ -57,41 +63,11 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 39px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 42px;
-  }
-}
-
-.contacts-list__surname {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    margin-bottom: 41px;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-content: start;
-  }
-}
-
-.contacts-list__patronymic {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    justify-content: start;
+    margin-bottom: 25px;
   }
 }
 
@@ -100,16 +76,12 @@
   font-size: 17px;
   line-height: 18px;
   padding: 0;
-  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    line-height: 18px;
+    line-height: 19px;
     padding-right: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // padding-left: 60px;
+    padding-top: 15px;
   }
 }
 
@@ -117,13 +89,12 @@
   border: none;
   border-bottom: 2px solid $basic-black;
   margin: 0;
-  padding-bottom: 15px;
 
   &:hover {
     border-bottom: 2px solid $tiffany;
   }
 
-  &:active {
+  &:focus {
     border-bottom: 2px solid $tiffany;
   }
 

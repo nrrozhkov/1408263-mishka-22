@@ -1,18 +1,20 @@
 .checkbox-list {
   border: none;
   padding: 0;
-  margin-bottom: 4px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     min-height: 304px;
     background-color: $wave-gray;
-    padding-top: 49px;
-    padding-bottom: 28px;
+    padding-top: 67px;
+    padding-bottom: 12px;
+    padding-left: 217px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 228px;
-    padding-bottom: 26px;
+    padding-left: 422px;
+    padding-bottom: 0;
   }
 }
 
@@ -22,21 +24,30 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
   }
 }
 
 .checkbox-list__header {
   margin-bottom: 36px;
+  padding-left: 30px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 17px;
+    position: absolute;
+    top: 67px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+    padding-right: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 175px;
-    padding-left: 61px;
-    margin: 0;
-    margin-right: 19px;
+    left: 256px;
+    top: 70px;
   }
 }
 
@@ -49,8 +60,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 75%;
-    margin-left: 132px;
+    width: 91%;
     padding: 0;
   }
 
@@ -66,22 +76,23 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  padding-left: 63px;
+  padding-left: 61px;
   margin-bottom: 43px;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     line-height: 18px;
     width: 48%;
-    margin-bottom: 22px;
-    margin-right: -6px;
-    padding-top: 16px;
+    margin-bottom: 37px;
     padding-bottom: 20px;
-    padding-left: 73px;
+    padding-left: 81px;
   }
 
   @media (min-width: $desktop-width) {
     width: 31%;
+    padding-left: 30px;
+    margin-right: 14px;
   }
 }
 
@@ -97,8 +108,12 @@
   @media (min-width: $tablet-width) {
     width: 52px;
     height: 52px;
-    top: 0;
-    left: -10px;
+    top: -17px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -53px;
   }
 }
 
@@ -117,7 +132,7 @@
   height: 38px;
   left: 7px;
   top: 0;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/Tick.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 
@@ -125,8 +140,13 @@
     background-image: url("../img/tabletTick.svg");
     width: 32px;
     height: 22px;
-    top: 17px;
-    left: 0;
+    top: 0;
+    left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -3px;
+    left: -43px;
   }
 }
 

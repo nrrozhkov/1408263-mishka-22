@@ -3,13 +3,21 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: $contact-grey;
+  min-height: 52px;
+  padding: 0;
+  padding-right: 40px;
 
   &:hover {
+    border-bottom: 2px solid $tiffany;
     color: $basic-black;
   }
 
   &:focus {
+    border-bottom: 2px solid $tiffany;
     color: $basic-black;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
   }
 }

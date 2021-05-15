@@ -1,5 +1,9 @@
 .order-form {
-  margin-bottom: 48px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .order-form__desc {
@@ -9,22 +13,39 @@
   color: $font-gray;
 }
 
+.order-form__item {
+  position: relative;
+}
+
 .order-form__heading {
   position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $tiffany;
   text-transform: uppercase;
+  overflow-wrap: normal;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    max-width: 167px;
+    padding: 0;
+    padding-right: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 74px;
+  }
 }
 
 .order-form__heading::after {
   content: "";
-  position: absolute;
-  top: 7px;
-  left: 62px;
-  width: 198px;
+  margin-left: 25px;
+  flex: 1;
   height: 1px;
   background-color: $tiffany;
 

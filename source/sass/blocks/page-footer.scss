@@ -6,21 +6,21 @@
 }
 
 .page-footer__wrapper {
-  padding: 0 30px;
-  padding-top: 28px;
+  padding: 0 25px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 48px;
+    padding-top: 50px;
     min-height: 143px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
+    padding-top: 52px;
   }
 }
 

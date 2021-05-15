@@ -5,12 +5,13 @@
 
   @media (min-width: $tablet-width) {
     background-color: $wave-gray;
-    padding-top: 66px;
+    padding-top: 50px;
     padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 124px;
+    padding-bottom: 5px;
   }
 }
 
