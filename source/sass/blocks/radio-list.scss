@@ -50,8 +50,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 50%;
     top: 72px;
-    left: 237px;
+    width: 175px;
+    margin-left: -525px;
+    padding-left: 60px;
   }
 }
 
