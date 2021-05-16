@@ -5,3 +5,13 @@
     display: block;
   }
 }
+
+.footer-logo__link {
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}

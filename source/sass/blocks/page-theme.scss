@@ -30,7 +30,7 @@
     max-height: 34px;
     padding-top: 2.95652%;
     background-image: url("../img/white-wave-tablet.svg");
-    background-position: 50% 100%;
+    background-position: 0 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +42,7 @@
     height: 24px;
     background-image: url("../img/zigzag-fill-desktop-tablet.svg");
     background-repeat: repeat-x;
+    background-position: 9px 100%;
   }
 }
 
@@ -50,14 +51,11 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    max-width: 418px;
   }
 
   @media (min-width: $desktop-width) {

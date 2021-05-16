@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
-    padding-left: 217px;
+    padding-left: 167px;
     margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 380px;
+    padding-left: 280px;
     margin-bottom: 56px;
     padding-top: 70px;
   }
@@ -27,14 +27,11 @@
 }
 
 .radio-list__option:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 18px;
+  min-height: 42px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
   }
 }
 
@@ -54,7 +51,7 @@
 
   @media (min-width: $desktop-width) {
     top: 72px;
-    left: 256px;
+    left: 237px;
   }
 }
 
@@ -104,6 +101,11 @@
   border: none;
   margin: 0;
   padding: 0;
+  max-width: 261px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 344px;
+  }
 }
 
 .radio-list__option {
@@ -177,7 +179,7 @@
   content: "";
   width: 14px;
   height: 14px;
-  top: 1px;
+  top: 2px;
   left: 12px;
   border-radius: 50%;
   background-color: $tiffany;
@@ -190,7 +192,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: -1px;
   }
 }
 
@@ -199,7 +201,7 @@
   content: "";
   width: 14px;
   height: 14px;
-  top: 8px;
+  top: 9px;
   left: 12px;
   border-radius: 50%;
   background-color: $tiffany;
@@ -212,6 +214,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    left: -1px;
   }
 }

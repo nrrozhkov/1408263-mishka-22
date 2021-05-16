@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 124px;
+
     padding-bottom: 5px;
   }
 }
@@ -18,4 +18,8 @@
 .contact-fieldset__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }

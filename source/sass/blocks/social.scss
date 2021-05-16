@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 238px;
+    margin-right: 255px;
     padding-top: 4px;
   }
 }
@@ -26,9 +26,5 @@
 }
 
 .social__item {
-  margin-right: 41px;
-
-  @media (min-width: $desktop-width) {
-    margin-right: 39px;
-  }
+  padding: 0 20px;
 }

@@ -29,6 +29,7 @@
   color: $tiffany;
   text-transform: uppercase;
   overflow-wrap: normal;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
@@ -48,6 +49,7 @@
   flex: 1;
   height: 1px;
   background-color: $tiffany;
+  margin-right: 30px;
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -12,7 +12,6 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
     padding-top: 50px;
     min-height: 143px;
     flex-direction: row;
@@ -20,6 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     padding-top: 52px;
   }
 }
@@ -30,10 +30,10 @@
 
 .page-footer__logo {
   @media (min-width: $tablet-width) {
-    margin-right: 87px;
+    margin-right: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 276px;
+    margin-right: 257px;
   }
 }
