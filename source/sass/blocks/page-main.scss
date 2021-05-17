@@ -1,22 +1,26 @@
+.page-main__wrapper {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
 .page-main__desc {
   font-size: 13px;
   line-height: 24px;
   color: $font-gray;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 81px;
+    margin-bottom: 14px;
     width: 668px;
-    padding-left: 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1052px;
-    padding: 0 175px;
+    width: 853px;
+    padding-left: 125px;
     margin: 0;
-    margin-bottom: 82px;
   }
 }

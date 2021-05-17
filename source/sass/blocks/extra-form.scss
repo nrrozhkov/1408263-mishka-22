@@ -1,14 +1,16 @@
 .extra-form {
   border: none;
   padding: 0;
-  margin-bottom: 17px;
+  margin: 0;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 40px;
+    padding-right: 107px;
   }
 }
 
@@ -22,19 +24,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 47px;
+    padding-left: 62px;
   }
 }
 
 .extra-form__title {
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 99px;
+    margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 59px;
+    padding-left: 52px;
+    padding-right: 115px;
   }
 }
 
@@ -43,12 +46,25 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: $contact-grey;
   border: 2px solid $font-gray;
+  padding: 17px;
   min-height: 142px;
+  margin: 0;
   width: 100%;
 
   &:hover {
     border: 2px solid $tiffany;
+  }
+
+  &:focus {
+    border: 2px solid $tiffany;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 142px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }

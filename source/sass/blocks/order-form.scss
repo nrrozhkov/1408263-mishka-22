@@ -1,3 +1,11 @@
+.order-form {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
 .order-form__desc {
   font-weight: 400;
   font-size: 14px;
@@ -5,14 +13,44 @@
   color: $font-gray;
 }
 
+.order-form__item {
+  position: relative;
+}
+
 .order-form__heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: $tiffany;
   text-transform: uppercase;
+  overflow-wrap: normal;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    max-width: 167px;
+    padding: 0;
+    padding-right: 135px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-left: 47px;
+    padding-right: 74px;
+  }
+}
+
+.order-form__heading::after {
+  content: "";
+  margin-left: 25px;
+  flex: 1;
+  height: 1px;
+  background-color: $tiffany;
+  margin-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

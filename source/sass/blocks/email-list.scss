@@ -8,30 +8,60 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-bottom: 50px;
   }
 }
 
 .email-list__title {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
-    min-width: 88px;
+    white-space: nowrap;
     margin: 0;
-    margin-right: 48px;
+    padding-right: 110px;
+    padding-top: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    white-space: nowrap;
-    margin-right: 89px;
+    position: absolute;
+    top: 0;
+    left: -114px;
   }
 }
 
 .email-list__item {
   border: none;
   border-bottom: 2px solid $basic-black;
+  padding-bottom: 15px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
     width: 100%;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.email-list__title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/email.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 21px;
+  top: 37px;
+  right: 3px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 14px;
+    left: 614px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 778px;
   }
 }

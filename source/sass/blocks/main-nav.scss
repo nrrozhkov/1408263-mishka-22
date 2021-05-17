@@ -135,7 +135,7 @@
   background-color: $basic-black;
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: 767px) {
   .main-nav--closed .main-nav__end {
     display: none;
   }

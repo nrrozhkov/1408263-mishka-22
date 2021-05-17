@@ -8,22 +8,59 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-bottom: 24px;
   }
 }
 
 .tel-list__title {
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 105px;
+    margin-top: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: -114px;
   }
 }
 
 .tel-list__item {
+  position: relative;
   border: none;
   border-bottom: 2px solid $basic-black;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-bottom: 7px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.tel-list__title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/phone.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 24px;
+  top: 30px;
+  right: 7px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: -6px;
+    left: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -6px;
+    left: 780px;
   }
 }

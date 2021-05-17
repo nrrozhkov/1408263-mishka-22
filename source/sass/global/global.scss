@@ -23,10 +23,10 @@ a {
 .wrapper {
   position: relative;
   margin: 0 auto;
-  max-width: 270px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    max-width: 668px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
