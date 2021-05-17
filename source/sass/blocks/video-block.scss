@@ -1,6 +1,19 @@
 .video-block {
-  margin-top: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+  }
+}
+
+.video-block__container {
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 
   &:hover {
     box-shadow: 0 6px 10px $shadow-grey;
@@ -13,60 +26,94 @@
 
 .video-block__content {
   border: 1px solid $bottom-grey;
+  max-width: 260px;
+  padding-top: 9px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 683px 1fr;
+    display: block;
+    max-width: 1050px;
+    padding-left: 682px;
+    padding-bottom: 14px;
   }
 }
 
 .video-block__title {
+  position: relative;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   padding-left: 66px;
   margin-left: 25px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     order: 2;
-    padding-left: 66px;
-    margin-left: 42px;
+    margin: 0;
+    margin-bottom: 24px;
+    padding-top: 22px;
+    padding-left: 105px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-top: 49px;
-    padding-left: 79px;
-    margin-top: 47px;
-    margin-bottom: 28px;
+    padding-top: 89px;
+    padding-left: 80px;
+    max-width: 178px;
+    margin-bottom: 26px;
+  }
+}
+
+.video-block__title::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/video-icon-mobile.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 22px;
+  top: 12px;
+  left: 9px;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 80px;
   }
 }
 
 .video-block__wrapper {
-  margin-bottom: 35px;
+  position: relative;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     min-height: 455px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1/2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 683px;
+    height: 455px;
   }
 }
 
 .video-block__desc-wrapper {
   padding-left: 34px;
   padding-right: 34px;
-  padding-bottom: 33px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     order: 3;
@@ -76,15 +123,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding-left: 79px;
+    padding-left: 78px;
     padding-right: 36px;
-    margin-top: 172px;
   }
 }
 
 .video-block__desc {
+  margin: 0;
+  margin-bottom: 42px;
+  width: 256px;
   font-size: 13px;
   line-height: 24px;
   color: $font-gray;
@@ -93,9 +140,64 @@
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 41px;
+    width: 592px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 253px;
+    margin-bottom: 52px;
+  }
+}
+
+.video-block__wrapper-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: 0 0;
+  border: 0;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video-block__wrapper-button::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/play-mobile.svg");
+  width: 101px;
+  height: 77px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -56%);
+
+  @media (min-width: $tablet-width) {
+    transform: translate(-50%, -65%);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-50%, -45%);
   }
 }
 
 .video-block__btn {
-  width: 100%;
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #444444;
+  background-color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 17px;
+  border: 2px solid $font-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 585px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 230px;
+  }
 }
