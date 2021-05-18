@@ -1,7 +1,7 @@
 .page-theme {
   position: relative;
   background-color: $wave-gray;
-  padding-top: 74px;
+  padding-top: 72px;
   padding-bottom: 74px;
   margin-bottom: 30px;
 
@@ -19,7 +19,7 @@
 
 .page-theme::after {
   @media (min-width: $tablet-width) {
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     content: "";
     position: absolute;
     bottom: -11px;
@@ -62,19 +62,17 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    max-width: 418px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    max-width: 507px;
   }
 }

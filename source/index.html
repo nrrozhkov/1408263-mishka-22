@@ -36,22 +36,7 @@
       </div>
     </nav>
   </header>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
   <main class="page-main">
     <section class="categories">
       <header class="categories__header">
@@ -105,7 +90,7 @@
           </div>
           <div class="featured-product__action">
             <p class="featured-product__price">Цена: 990 руб.</p>
-            <a class="featured-product__button button" href="#">заказать</a>
+            <button class="featured-product__button button js-modal" type="button">заказать</button>
           </div>
         </div>
       </div>
@@ -154,14 +139,12 @@
             </blockquote>
           </div>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle-prev" type="button"><span
-                class="visually-hidden">назад</span>
+            <button class="slider__toggle slider__toggle-prev" type="button"><span class="visually-hidden">назад</span>
               <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
               </svg>
             </button>
-            <button class="slider__toggle slider__toggle-next" type="button"><span
-                class="visually-hidden">вперед</span>
+            <button class="slider__toggle slider__toggle-next" type="button"><span class="visually-hidden">вперед</span>
               <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
               </svg>
@@ -242,6 +225,24 @@
       </div>
     </div>
   </footer>
+  <section class="pop-up">
+      <div class="pop-up__wrapper">
+        <form action="https://echo.htmlacademy.ru/" class="pop-up__form">
+          <h3 class="pop-up__header">добавить в корзину</h3>
+          <p class="pop-up__desc">Выберите размер:</p>
+          <div class="pop-up__list">
+            <input type="radio" class="pop-up__input" value="S" name="value" id="s">
+            <label for="s" class="pop-up__label">S</label>
+            <input type="radio" class="pop-up__input" value="M" name="value" id="m">
+            <label for="m" class="pop-up__label">M</label>
+            <input type="radio" class="pop-up__input" value="L" name="value" id="l">
+            <label for="l" class="pop-up__label">L</label>
+          </div>
+          <button class="pop-up__btn button" type="submit">Добавить</button>
+        </form>
+      </div>
+  </section>
+  <script src="js/menu.js"></script>
 </body>
 
 </html>

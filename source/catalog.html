@@ -36,22 +36,6 @@
       </div>
     </nav>
   </header>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
 
   <main class="page-main">
     <div class="page-theme">
@@ -63,8 +47,8 @@
         <div class="catalog__list">
           <div class="product">
             <div class="product__image">
-              <a href="#" class="product__link"><img src="img/photo-1.jpg" alt="Фотография зайчика попрыгайчика"
-                  width="260" height="195" class="product-img"></a>
+              <a href="#" class="product__link-img"><img src="img/photo-1.jpg" alt="Фотография зайчика попрыгайчика"
+                  width="260" height="195" class="product__img"></a>
             </div>
             <div class="product__info">
               <div class="product__specs">
@@ -75,7 +59,7 @@
               </div>
               <div class="product__action">
                 <p class="product__price">1 200 руб.</p>
-                <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                <a href="#" class="product__basket-link js-modal"><img src="img/cart.svg" class="product__basket"
                     alt="Посмотреть корзину" width="20" height="19">
                 </a>
               </div>
@@ -83,8 +67,8 @@
           </div>
           <div class="product">
             <div class="product__image">
-              <a href="#" class="product__link"><img src="img/photo-2.jpg" alt="Фотография корзинки для белья"
-                  width="260" height="195" class="product-img"></a>
+              <a href="#" class="product__link-img"><img src="img/photo-2.jpg" alt="Фотография корзинки для белья"
+                  width="260" height="195" class="product__img"></a>
             </div>
             <div class="product__info">
               <div class="product__specs">
@@ -95,7 +79,7 @@
               </div>
               <div class="product__action">
                 <p class="product__price">690 руб.</p>
-                <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                <a href="#" class="product__basket-link js-modal"><img src="img/cart.svg" class="product__basket"
                     alt="Посмотреть корзину" width="20" height="19">
                 </a>
               </div>
@@ -103,19 +87,19 @@
           </div>
           <div class="product">
             <div class="product__image">
-              <a href="#" class="product__link"><img src="img/photo-3.jpg" alt="Фотография большой корзинки для игрушек"
-                  width="260" height="195" class="product-img"></a>
+              <a href="#" class="product__link-img"><img src="img/photo-3.jpg" alt="Фотография большой корзинки для игрушек"
+                  width="260" height="195" class="product__img"></a>
             </div>
             <div class="product__info">
               <div class="product__specs">
-                <a href="#" class="product__link">
+                <a href="#" class="product__link product__link-basket">
                   <p class="product__name">Большая корзинка для игрушек</p>
                 </a>
                 <p class="product__desc">Диаметр 30 см, высота 30 см</p>
               </div>
               <div class="product__action">
                 <p class="product__price">1 500 руб.</p>
-                <a href="#" class="product__basket-link"><img src="img/cart.svg" class="product__basket"
+                <a href="#" class="product__basket-link js-modal"><img src="img/cart.svg" class="product__basket"
                     alt="Посмотреть корзину" width="20" height="19"></a>
               </div>
             </div>
@@ -135,7 +119,7 @@
             <p class="video-block__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
               как
               появляются наши товары.</p>
-            <a href="form.html" class="video-block__btn">сделать заказ</a>
+            <a href="form.html" class="video-block__btn button">сделать заказ</a>
           </div>
         </div>
       </div>
@@ -186,4 +170,5 @@
       </div>
     </div>
   </footer>
+  <script src="js/menu.js"></script>
 </body>
