@@ -34,12 +34,23 @@
   margin: 0;
   margin-bottom: 14px;
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .pop-up__desc {
   text-align: center;
   margin: 0;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .pop-up__list {
