@@ -36,22 +36,7 @@
       </div>
     </nav>
   </header>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
 
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
   <main class="page-main">
     <div class="page-theme">
       <div class="wrapper page-main__wrapper">
@@ -196,5 +181,23 @@
         </div>
       </div>
     </footer>
+    <section class="pop-up">
+      <div class="pop-up__wrapper">
+        <form action="https://echo.htmlacademy.ru/" class="pop-up__form">
+          <h3 class="pop-up__header">добавить в корзину</h3>
+          <p class="pop-up__desc">Выберите размер:</p>
+          <div class="pop-up__list">
+            <input type="radio" class="pop-up__input" value="S" name="value" id="s">
+            <label for="s" class="pop-up__label">S</label>
+            <input type="radio" class="pop-up__input" value="M" name="value" id="m">
+            <label for="m" class="pop-up__label">M</label>
+            <input type="radio" class="pop-up__input" value="L" name="value" id="l">
+            <label for="l" class="pop-up__label">L</label>
+          </div>
+          <button class="pop-up__btn button" type="submit">Добавить</button>
+        </form>
+      </div>
+  </section>
   </main>
+  <script src="js/menu.js"></script>
 </body>

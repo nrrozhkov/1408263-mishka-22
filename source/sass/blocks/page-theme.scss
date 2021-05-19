@@ -1,19 +1,19 @@
 .page-theme {
   position: relative;
   background-color: $wave-gray;
-  padding-top: 74px;
+  padding-top: 72px;
   padding-bottom: 74px;
-  margin-bottom: 17px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 101px;
-    margin-bottom: 67px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 102px;
-    margin-bottom: 110px;
-    padding-bottom: 90px;
+    margin-bottom: 122px;
+    padding-bottom: 100px;
   }
 }
 
@@ -30,7 +30,7 @@
     max-height: 34px;
     padding-top: 2.95652%;
     background-image: url("../img/white-wave-tablet.svg");
-    background-position: 0 100%;
+    background-position: 50% 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -42,7 +42,18 @@
     height: 24px;
     background-image: url("../img/zigzag-fill-desktop-tablet.svg");
     background-repeat: repeat-x;
-    background-position: 9px 100%;
+  }
+}
+
+.page-theme__catalog {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 123px;
   }
 }
 
@@ -52,15 +63,16 @@
   line-height: 30px;
   text-align: center;
   margin: 0 auto;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    max-width: 507px;
   }
 }

@@ -6,6 +6,8 @@
 
 // Blocks
 
+@import "blocks/button.scss";
+@import "blocks/pop-up.scss";
 @import "blocks/order-form.scss";
 @import "blocks/about-us.scss";
 @import "blocks/catalog.scss";
@@ -41,4 +43,3 @@
 @import "blocks/footer-logo.scss";
 @import "blocks/contact-fieldset.scss";
 @import "blocks/submit.scss";
-@import "blocks/button.scss";
