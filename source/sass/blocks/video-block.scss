@@ -65,13 +65,14 @@
     margin-bottom: 24px;
     padding-top: 22px;
     padding-left: 105px;
-    padding-right: 15px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 96px;
     padding-left: 80px;
     margin-bottom: 26px;
+    max-width: 250px;
   }
 }
 
@@ -186,8 +187,6 @@
 .video-block__btn {
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 17px;
-  border: 2px solid $font-gray;
   width: 100%;
 
   @media (min-width: $tablet-width) {

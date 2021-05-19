@@ -8,9 +8,11 @@
   color: $font-gray;
   background-color: $basic-white;
   padding: 16px;
+  height: 52px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid $font-gray;
 
   &:hover {
     color: $basic-white;

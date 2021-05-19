@@ -52,9 +52,9 @@
             </div>
             <div class="product__info">
               <div class="product__specs">
-                <a href="#" class="product__link">
-                  <p class="product__name">Зайчик-попрыгайчик</p>
-                </a>
+                <p href="#" class="product__link">
+                  <a class="product__name">Зайчик-попрыгайчик</a>
+                </p>
                 <p class="product__desc">Рост 30 см, вес 200 г</p>
               </div>
               <div class="product__action">
@@ -87,8 +87,8 @@
           </div>
           <div class="product">
             <div class="product__image">
-              <a href="#" class="product__link-img"><img src="img/photo-3.jpg" alt="Фотография большой корзинки для игрушек"
-                  width="260" height="195" class="product__img"></a>
+              <a href="#" class="product__link-img"><img src="img/photo-3.jpg"
+                  alt="Фотография большой корзинки для игрушек" width="260" height="195" class="product__img"></a>
             </div>
             <div class="product__info">
               <div class="product__specs">
@@ -170,5 +170,22 @@
       </div>
     </div>
   </footer>
+  <section class="pop-up">
+    <div class="pop-up__wrapper">
+      <form action="https://echo.htmlacademy.ru/" class="pop-up__form">
+        <h3 class="pop-up__header">добавить в корзину</h3>
+        <p class="pop-up__desc">Выберите размер:</p>
+        <div class="pop-up__list">
+          <input type="radio" class="pop-up__input" value="S" name="value" id="s">
+          <label for="s" class="pop-up__label">S</label>
+          <input type="radio" class="pop-up__input" value="M" name="value" id="m">
+          <label for="m" class="pop-up__label">M</label>
+          <input type="radio" class="pop-up__input" value="L" name="value" id="l">
+          <label for="l" class="pop-up__label">L</label>
+        </div>
+        <button class="pop-up__btn button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
   <script src="js/menu.js"></script>
 </body>

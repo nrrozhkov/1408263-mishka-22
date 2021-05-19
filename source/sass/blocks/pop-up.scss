@@ -14,11 +14,13 @@
   background-color: $basic-white;
   padding: 0 30px;
   margin: auto;
-  border: 2px solid $bottom-grey;
+  border: 1px solid $bottom-grey;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 556px;
 
   @media (min-width: $tablet-width) {
     width: 556px;
@@ -101,5 +103,5 @@
   color: $basic-white;
   background-color: $tiffany;
   margin-bottom: 46px;
-  border-color: $tiffany;
+  border: none;
 }
