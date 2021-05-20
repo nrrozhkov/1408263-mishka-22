@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин вязаных изделий ручной работы Мишка</title>
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,8 +17,12 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__start-menu">
-        <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" class="page-header__image"
-            width="86" height="35" alt="Логотип компании MISHKA">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1050px)" srcset="../img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="../img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" class="page-header__image" alt="Логотип компании MISHKA">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
@@ -85,8 +94,13 @@
             </dl>
           </div>
           <div class="featured-product__img-block">
-            <img class="featured-product__image" src="img/triple-set-mobile1.jpg" alt="Вязаные корзинки" width="260"
-              height="315">
+            <picture>
+              <source media="(min-width: 1050px)"
+                srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="featured-product__image" src="img/triple-set-mobile1.jpg"
+                srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
           </div>
           <div class="featured-product__action">
             <p class="featured-product__price">Цена: 990 руб.</p>
@@ -226,21 +240,21 @@
     </div>
   </footer>
   <section class="pop-up">
-      <div class="pop-up__wrapper">
-        <form action="https://echo.htmlacademy.ru/" class="pop-up__form">
-          <h3 class="pop-up__header">добавить в корзину</h3>
-          <p class="pop-up__desc">Выберите размер:</p>
-          <div class="pop-up__list">
-            <input type="radio" class="pop-up__input" value="S" name="value" id="s">
-            <label for="s" class="pop-up__label">S</label>
-            <input type="radio" class="pop-up__input" value="M" name="value" id="m">
-            <label for="m" class="pop-up__label">M</label>
-            <input type="radio" class="pop-up__input" value="L" name="value" id="l">
-            <label for="l" class="pop-up__label">L</label>
-          </div>
-          <button class="pop-up__btn button" type="submit">Добавить</button>
-        </form>
-      </div>
+    <div class="pop-up__wrapper">
+      <form action="https://echo.htmlacademy.ru/" class="pop-up__form">
+        <h3 class="pop-up__header">добавить в корзину</h3>
+        <p class="pop-up__desc">Выберите размер:</p>
+        <div class="pop-up__list">
+          <input type="radio" class="pop-up__input" value="S" name="value" id="s">
+          <label for="s" class="pop-up__label">S</label>
+          <input type="radio" class="pop-up__input" value="M" name="value" id="m">
+          <label for="m" class="pop-up__label">M</label>
+          <input type="radio" class="pop-up__input" value="L" name="value" id="l">
+          <label for="l" class="pop-up__label">L</label>
+        </div>
+        <button class="pop-up__btn button" type="submit">Добавить</button>
+      </form>
+    </div>
   </section>
   <script src="js/menu.js"></script>
 </body>
