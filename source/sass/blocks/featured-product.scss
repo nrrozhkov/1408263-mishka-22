@@ -279,8 +279,8 @@
 
 .featured-product__action {
   @media (min-width: $tablet-width) {
-    width: 292px;
-    margin-right: auto;
+    width: 100%;
+    padding-right: 378px;
     margin-top: -136px;
   }
 
