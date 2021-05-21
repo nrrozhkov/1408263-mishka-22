@@ -69,7 +69,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
-      background-size: 668px auto;
+      background-size: 768px auto;
     }
   }
 
@@ -77,7 +77,6 @@
     padding-bottom: 356px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-desktop@2x.jpg");
       background-size: 1050px auto;
     }
   }

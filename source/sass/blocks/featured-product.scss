@@ -127,6 +127,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     min-height: 251px;
   }
 
@@ -278,9 +279,9 @@
 
 .featured-product__action {
   @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-right: 379px;
-    margin-top: -110px;
+    width: 292px;
+    margin-right: auto;
+    margin-top: -136px;
   }
 
   @media (min-width: $desktop-width) {
