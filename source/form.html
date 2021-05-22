@@ -17,8 +17,12 @@
   <header class="page-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__start-menu">
-        <a class="page-header__logo" href="index.html"><img src="img/mishka-logo-mobile.svg" class="page-header__image"
-            width="86" height="35" alt="Логотип компании MISHKA">
+        <a class="page-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img src="img/mishka-logo-mobile.svg" class="page-header__image" alt="Логотип компании MISHKA">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
