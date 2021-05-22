@@ -1,9 +1,9 @@
 .page-theme {
   position: relative;
   background-color: $wave-gray;
-  padding-top: 72px;
+  padding-top: 73px;
   padding-bottom: 74px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 101px;
@@ -63,7 +63,6 @@
   line-height: 30px;
   text-align: center;
   margin: 0 auto;
-  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
