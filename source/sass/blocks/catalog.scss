@@ -15,6 +15,11 @@
   flex-direction: column;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     margin: 0 -50px;

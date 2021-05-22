@@ -30,8 +30,8 @@
 }
 
 .page-header__image {
-  height: 35px;
-  width: 86px;
+  width: 100%;
+  height: auto;
 
   &:hover {
     opacity: 0.6;

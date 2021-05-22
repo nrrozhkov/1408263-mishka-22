@@ -56,15 +56,29 @@
   padding: 74px 30px 120px;
   background-position: center bottom -73px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/hero-desktop2.jpg");
     background-position: 50% 0;
     padding-top: 155px;
     padding-bottom: 372px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 356px;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 1050px auto;
+    }
   }
 }
 

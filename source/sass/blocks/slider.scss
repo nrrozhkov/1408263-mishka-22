@@ -9,6 +9,11 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +25,11 @@
     padding-left: 175px;
     padding-bottom: 66px;
     margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review-desktop@2x.jpg");
+      background-size: 350px 457px;
+    }
   }
 }
 
@@ -78,7 +88,7 @@
   width: 50%;
   border: 1px solid $border-gray;
   background-color: transparent;
-  padding: 13px 42px 13px 31px;
+  padding: 13px 42px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
