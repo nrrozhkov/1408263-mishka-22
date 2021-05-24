@@ -6,6 +6,10 @@
     padding-left: 68px;
     margin-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .copyright__text {
