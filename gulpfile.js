@@ -5,9 +5,7 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const htmlmin = require("gulp-htmlmin");
-const terser = require("terser");
-const imagemin = require("imagemin");
+
 
 // Styles
 
