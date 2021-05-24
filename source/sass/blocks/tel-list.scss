@@ -43,19 +43,23 @@
   }
 }
 
-.tel-list__title::before {
+.tel-list__title-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/phone.svg");
-  background-repeat: no-repeat;
   width: 25px;
   height: 24px;
   top: 30px;
   right: 7px;
   z-index: 1;
+  fill: $basic-black;
+  opacity: 0.3;
+
+  &:hover {
+    fill: $tiffany;
+    opacity: 1;
+  }
 
   @media (min-width: $tablet-width) {
-    top: -6px;
+    top: 11px;
     left: 618px;
   }
 
@@ -63,4 +67,9 @@
     top: -6px;
     left: 780px;
   }
+}
+
+.tel-list__item:hover + .tel-list__title-icon {
+  fill: $tiffany;
+  opacity: 1;
 }

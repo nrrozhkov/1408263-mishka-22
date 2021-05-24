@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-right: 46px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,4 +27,13 @@
 
 .social__item {
   padding: 0 20px;
+}
+
+.social__link-icon:hover {
+  fill: $tiffany;
+}
+
+.social__link-icon:active {
+  fill: $tiffany;
+  opacity: 0.3;
 }

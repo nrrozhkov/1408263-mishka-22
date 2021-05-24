@@ -45,16 +45,15 @@
   }
 }
 
-.email-list__title::before {
+.email-list__title-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/email.svg");
-  background-repeat: no-repeat;
   width: 32px;
   height: 21px;
   top: 37px;
   right: 3px;
   z-index: 1;
+  fill: $basic-black;
+  opacity: 0.3;
 
   @media (min-width: $tablet-width) {
     top: 14px;
@@ -64,4 +63,9 @@
   @media (min-width: $desktop-width) {
     left: 778px;
   }
+}
+
+.email-list__item:hover + .email-list__title-icon {
+  fill: $tiffany;
+  opacity: 1;
 }

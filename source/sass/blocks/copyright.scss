@@ -3,6 +3,8 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 7px;
+    padding-left: 68px;
+    margin-left: 0;
   }
 }
 
@@ -10,8 +12,7 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  margin: 0;
-  margin-right: 27px;
+  margin: 0 30px 0 0;
 }
 
 .copyright__link {
@@ -20,12 +21,19 @@
   height: 34px;
 }
 
-.copyright__link::after {
+.copyright-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/htmlacademycopyright.svg");
-  background-repeat: no-repeat;
   width: 27px;
   height: 34px;
   bottom: 8px;
+  fill: $tiffany;
+}
+
+.copyright__link:hover .copyright-icon {
+  fill: $dark-tiffany;
+}
+
+.copyright__link:active .copyright-icon {
+  fill: $dark-tiffany;
+  opacity: 0.3;
 }
