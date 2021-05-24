@@ -270,10 +270,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 13px;
+    min-width: 334px;
   }
 
   @media (min-width: $desktop-width) {
     z-index: 1;
+    min-width: 525px;
   }
 }
 
