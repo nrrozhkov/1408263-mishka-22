@@ -17,6 +17,53 @@
   }
 }
 
+.page-theme__form {
+  position: relative;
+  background-color: $wave-gray;
+  padding-top: 73px;
+  padding-bottom: 74px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 101px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+    margin-bottom: 122px;
+    padding-bottom: 100px;
+  }
+}
+
+.page-theme__form::after {
+  @media (min-width: $tablet-width) {
+    background-repeat: repeat-x;
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    max-height: 34px;
+    padding-top: 2.95652%;
+    background-image: url("../img/white-wave-tablet.svg");
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-desktop-tablet.svg");
+    background-repeat: repeat-x;
+  }
+}
+
 .page-theme::after {
   @media (min-width: $tablet-width) {
     background-repeat: repeat-x;

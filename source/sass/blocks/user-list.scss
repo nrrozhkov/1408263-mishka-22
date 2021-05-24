@@ -51,15 +51,17 @@
   }
 }
 
-.user-list__search::before {
+.user-list__search-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/search.svg");
-  background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   left: 32px;
   top: 28px;
+  opacity: 0.3;
+
+  &:hover {
+    fill: $tiffany;
+  }
 
   @media (min-width: $tablet-width) {
     top: 36px;
@@ -79,33 +81,22 @@
   }
 }
 
-.user-list__basket::before {
+.user-list__basket-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/cart.svg");
-  background-repeat: no-repeat;
   width: 21px;
   height: 20px;
   left: 30px;
   bottom: 33px;
+  opacity: 0.3;
 
-  &:hover {
-    position: absolute;
-    content: "";
-    background-image: url("../img/cart.svg");
-    background-repeat: no-repeat;
-    width: 18px;
-    height: 18px;
-    left: 32px;
-  }
 
   @media (min-width: $tablet-width) {
-    left: 32px;
-    top: 35px;
+    left: -51px;
+    top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    left: 31px;
+    left: -51px;
     height: 21px;
     width: 20px;
   }

@@ -30,10 +30,19 @@
 
 .page-footer__logo {
   @media (min-width: $tablet-width) {
-    margin-right: 66px;
+    margin-right: 67px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 257px;
   }
+}
+
+.page-footer__logo:hover .page-footer__logo-icon {
+  fill: $tiffany;
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  fill: $tiffany;
+  opacity: 0.3;
 }

@@ -16,6 +16,14 @@
 
 .marketing-list__item {
   color: $basic-black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .marketing-list__item:nth-child(1) {

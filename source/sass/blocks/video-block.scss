@@ -165,10 +165,8 @@
   cursor: pointer;
 }
 
-.video-block__wrapper-button::before {
+.video-block__wrapper-button-icon {
   position: absolute;
-  content: "";
-  background-image: url("../img/play-mobile.svg");
   width: 101px;
   height: 77px;
   top: 50%;
@@ -177,10 +175,32 @@
 
   @media (min-width: $tablet-width) {
     transform: translate(-50%, -65%);
+
+    &:hover {
+      width: 122px;
+      height: 94px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 62px;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop-width) {
     transform: translate(-50%, -45%);
+
+    &:hover {
+      width: 122px;
+      height: 95px;
+    }
+
+    &:active {
+      width: 81px;
+      height: 62px;
+      opacity: 0.3;
+    }
   }
 }
 

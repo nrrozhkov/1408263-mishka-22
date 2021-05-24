@@ -111,3 +111,25 @@
     margin-right: 37px;
   }
 }
+
+.slider__toggle-back {
+  width: 50px;
+  height: 26px;
+  fill: $basic-black;
+}
+
+.slider__toggle-front {
+  width: 50px;
+  height: 26px;
+  fill: $basic-black;
+}
+
+.slider__toggle-front:hover,
+.slider__toggle-back:hover {
+  opacity: 0.6;
+}
+
+.slider__toggle-front:active,
+.slider__toggle-back:active {
+  opacity: 0.3;
+}
