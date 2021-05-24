@@ -205,6 +205,16 @@
   }
 }
 
+.product__basket-link:hover .product__action-icon {
+  fill: $tiffany;
+  opacity: 1;
+}
+
+.product__basket-link:active .product__action-icon {
+  fill: $tiffany;
+  opacity: 0.3;
+}
+
 .product__action-icon {
   fill: $basic-black;
   opacity: 0.3;

@@ -14,8 +14,8 @@
       <div class="main-nav__start-menu">
         <a class="page-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1050px)" srcset="../img/mishka-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="../img/mishka-logo-tablet.svg">
+            <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
             <img src="img/mishka-logo-mobile.svg" class="page-header__image" alt="Логотип компании MISHKA">
           </picture>
         </a>
@@ -23,24 +23,27 @@
       </div>
       <div class="main-nav__end">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html" class="main-nav__link">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html" class="main-nav__link">Вязание на заказ</a></li>
+          <li class="site-list__item"><a href="catalog.html" class="main-nav__link"><span class="main-nav__link-text">Каталог товаров</span></a></li>
+          <li class="site-list__item"><a href="form.html" class="main-nav__link"><span class="main-nav__link-text">Вязание на заказ</span></a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__search"><a href="#" class="main-nav__link"><span
-                class="user-list__search-word">Поиск по сайту</span><svg class="user-list__search-icon" width="18"
+                class="main-nav__link-text">Поиск по сайту</span><svg class="user-list__search-icon" width="18"
                 height="18">
-                <use xlink:href="#search-icon"></use>
+                <use xlink:href="img/sprite.svg#user-list__search-icon"></use>
+              </svg></a></li>
+          <li class="user-list__item user-list__basket"><a class="main-nav__link user-list__basket-link" href="#"><svg
+                class="user-list__basket-icon" width="21" height="18">
+                <use xlink:href="img/sprite.svg#user-list__basket-icon"></use>
               </svg>
-            </a></li>
-          <li class="user-list__item user-list__basket"><a class="main-nav__link user-list__basket-link"
-              href="#">Корзина: пока пуста</a></li>
+              <span class="main-nav__link-text">Корзина: пока пуста</span></a></li>
         </ul>
         <ul class="marketing-list">
           <li class="marketing-list__item"><a href="#" class="marketing-list__item">Новые поступления</a></li>
           <li class="marketing-list__item"><a href="#" class="marketing-list__item">Распродажа</a></li>
         </ul>
-        <p class="delivery">Бесплатная доставка по России</p>
+        <p class="delivery">Бесплатная доставка по России
+        <p class="categories__toys-icon" width="21" height="18"></p>
       </div>
     </nav>
   </header>

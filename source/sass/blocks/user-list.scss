@@ -47,6 +47,14 @@
     span {
       position: absolute;
       opacity: 0;
+
+      &:hover {
+        opacity: 0;
+
+        &:active {
+          opacity: 0;
+        }
+      }
     }
   }
 }
@@ -54,6 +62,10 @@
 .user-list__search:hover .user-list__search-icon {
   fill: $tiffany;
   opacity: 1;
+}
+
+.user-list__search:active .user-list__search-icon {
+  opacity: 0.3;
 }
 
 .user-list__search-icon {
@@ -106,4 +118,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 82px;
   }
+}
+
+.user-list__basket:hover .user-list__basket-icon {
+  fill: $tiffany;
+  opacity: 1;
+}
+
+.user-list__basket:active .user-list__basket-icon {
+  opacity: 0.3;
 }
