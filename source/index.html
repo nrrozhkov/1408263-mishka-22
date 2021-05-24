@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин вязаных изделий ручной работы Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -28,8 +30,10 @@
       </div>
       <div class="main-nav__end">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html" class="main-nav__link"><span class="main-nav__link-text">Каталог товаров</span></a></li>
-          <li class="site-list__item"><a href="form.html" class="main-nav__link"><span class="main-nav__link-text">Вязание на заказ</span></a></li>
+          <li class="site-list__item"><a href="catalog.html" class="main-nav__link"><span
+                class="main-nav__link-text">Каталог товаров</span></a></li>
+          <li class="site-list__item"><a href="form.html" class="main-nav__link"><span
+                class="main-nav__link-text">Вязание на заказ</span></a></li>
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item user-list__search"><a href="#" class="main-nav__link"><span
@@ -111,9 +115,15 @@
               <source media="(min-width: 1150px)"
                 srcset="img/triple-set-desktop.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img class="featured-product__image" src="img/triple-set-mobile1.jpg"
-                srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+
             </picture>
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <img class="featured-product__image" src="img/triple-set-mobile1.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
           </div>
           <div class="featured-product__action">
             <p class="featured-product__price">Цена: 990 руб.</p>
@@ -212,27 +222,30 @@
     <div class="wrapper page-footer__wrapper">
       <div class="page-footer__logo footer-logo">
         <a class="footer-logo__link" href="#"><svg class="page-footer__logo-icon" width="102" height="34">
-          <use xlink:href="img/sprite.svg#page-footer__logo-icon"></use>
-        </svg></a>
+            <use xlink:href="img/sprite.svg#page-footer__logo-icon"></use>
+          </svg></a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"><svg class="social__link--instagram-icon social__link-icon" width="23" height="22">
-              <use xlink:href="img/sprite.svg#social__link--instagram-icon"></use>
-            </svg>
+            <a class="social__link social__link--instagram" aria-label="Мишка в Инстаграме" href="#"><svg
+                class="social__link--instagram-icon social__link-icon" width="23" height="22">
+                <use xlink:href="img/sprite.svg#social__link--instagram-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"><svg class="social__link--facebook-icon social__link-icon" width="16" height="30">
-              <use xlink:href="img/sprite.svg#social__link--facebook-icon"></use>
-            </svg>
+            <a class="social__link social__link--facebook" aria-label="Мишка в Фэйсбуке" href="#"><svg
+                class="social__link--facebook-icon social__link-icon" width="16" height="30">
+                <use xlink:href="img/sprite.svg#social__link--facebook-icon"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--twitter" aria-label="Мишка в Твиттере" href="#"><svg class="social__link--twitter-icon social__link-icon" width="25" height="20">
-              <use xlink:href="img/sprite.svg#social__link--twitter-icon"></use>
-            </svg>
+            <a class="social__link social__link--twitter" aria-label="Мишка в Твиттере" href="#"><svg
+                class="social__link--twitter-icon social__link-icon" width="25" height="20">
+                <use xlink:href="img/sprite.svg#social__link--twitter-icon"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -241,8 +254,8 @@
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span
             class="visually-hidden">Логотип HTML academy</span><svg class="copyright-icon" width="27" height="35">
-              <use xlink:href="img/sprite.svg#htmlacademycopyright"></use>
-            </svg></a>
+            <use xlink:href="img/sprite.svg#htmlacademycopyright"></use>
+          </svg></a>
       </div>
     </div>
   </footer>
@@ -263,7 +276,7 @@
       </form>
     </div>
   </section>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 
 </html>

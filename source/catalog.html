@@ -5,7 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма заказа интернет-магазина вязаных изделий ручной работы Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -60,11 +67,12 @@
             <div class="product__image">
               <a href="#" class="product__link">
                 <picture>
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1.jpg" srcset="img/photo-1@2x.jpg 2x" class="product__img"
-                    alt="Фотография зайчика попрыгайчика" class="product-img">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-1.webp 1x, img/photo-1@2x.webp 2x">
+                  <img src="img/photo-1.jpg" srcset="img/photo-1@2x.jpg 2x" class="product__img" alt="Фотография зайчика попрыгайчика" class="product-img">
                 </picture>
               </a>
             </div>
@@ -89,12 +97,14 @@
             <div class="product__image">
               <a href="#" class="product__link">
                 <picture>
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2.jpg" srcset="img/photo-2@2x.jpg" class="product__img"
-                    alt="Фотография корзинки для белья">
-                </picture>
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                    <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/photo-2.webp 1x, img/photo-2@2x.webp 2x">
+                    <img src="img/photo-2.jpg" srcset="img/photo-2@2x.jpg 2x" class="product__img" alt="Фотография зайчика попрыгайчика" class="product-img">
+                  </picture>
               </a>
             </div>
             <div class="product__info">
@@ -118,11 +128,12 @@
             <div class="product__image">
               <a href="#" class="product__link">
                 <picture>
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3.jpg" srcset="img/photo-3@2x.jpg" class="product__img"
-                    alt="Фотография корзинки для белья">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/photo-3.webp 1x, img/photo-3@2x.webp 2x">
+                  <img src="img/photo-3.jpg" srcset="img/photo-3@2x.jpg 2x" class="product__img" alt="Фотография зайчика попрыгайчика" class="product-img">
                 </picture>
               </a>
             </div>
@@ -228,5 +239,5 @@
       </form>
     </div>
   </section>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
