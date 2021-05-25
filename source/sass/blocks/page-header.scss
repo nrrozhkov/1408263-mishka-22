@@ -30,8 +30,8 @@
 }
 
 .page-header__image {
-  width: 100%;
-  height: auto;
+  width: 86px;
+  height: 35px;
 
   &:hover {
     opacity: 0.6;
@@ -39,5 +39,15 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }

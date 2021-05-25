@@ -3,7 +3,7 @@
   background-color: $wave-gray;
   padding-top: 73px;
   padding-bottom: 74px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     padding-top: 101px;
@@ -17,7 +17,7 @@
   }
 }
 
-.page-theme__form {
+.page-main__theme-form {
   position: relative;
   background-color: $wave-gray;
   padding-top: 73px;
@@ -101,6 +101,25 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 123px;
+  }
+}
+
+.page-main__wrapper__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

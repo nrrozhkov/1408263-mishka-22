@@ -1,6 +1,7 @@
 .product {
   border: 1px solid $bottom-grey;
   margin: 0 auto;
+  min-width: 260px;
 
   &:hover {
     box-shadow: 0 6px 10px $shadow-grey;
@@ -42,7 +43,7 @@
 .product__info {
   display: flex;
   flex-direction: column;
-  padding: 20px 28px 19px;
+  padding: 27px 28px 10px;
 
   @media (min-width: $tablet-width) {
     min-height: 332px;
@@ -104,13 +105,15 @@
   justify-content: space-between;
   position: relative;
   border-top: 1px solid $bottom-grey;
-  padding-top: 31px;
+  padding-top: 20px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin: 0;
     margin-top: auto;
-    padding-top: 25px;
+    padding-top: 26px;
   }
 }
 

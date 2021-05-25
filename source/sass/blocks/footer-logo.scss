@@ -15,3 +15,13 @@
     padding-left: 0;
   }
 }
+
+.footer-logo__link:hover .page-footer__logo-icon {
+  fill: $tiffany;
+  opacity: 1;
+}
+
+.footer-logo__link:active .page-footer__logo-icon {
+  fill: $tiffany;
+  opacity: 0.3;
+}
